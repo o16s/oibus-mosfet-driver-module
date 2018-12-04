@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name DMG6402LVT)(type Legacy)(uri /Volumes/Serendipity/Repositories/Octanis/oibus-mosfet-driver-module/rev1/OIBUS_MOSFET_driver_module/lib_sch/DMG6402LVT.lib)(options "")(descr ""))
+)
