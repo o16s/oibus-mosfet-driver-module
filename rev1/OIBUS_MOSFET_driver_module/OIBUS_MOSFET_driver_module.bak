@@ -2797,12 +2797,8 @@ Text Notes 14050 4500 0    39   ~ 0
 SWCLK-JTCK
 Text GLabel 11900 7850 2    50   Input ~ 0
 ADC0
-Text GLabel 11900 7950 2    50   Input ~ 0
-ADC1
 Text GLabel 11900 8050 2    50   Input ~ 0
-ADC2
-Text GLabel 11900 8150 2    50   Input ~ 0
-ADC3
+ADC1
 $Comp
 L Jumper:SolderJumper_2_Open JP3
 U 1 1 5D96CA64
@@ -2812,17 +2808,6 @@ F 1 "SolderJumper_2_Open" H 11750 7964 50  0001 C CNN
 F 2 "Resistors_SMD:R_0603" H 11750 7850 50  0001 C CNN
 F 3 "~" H 11750 7850 50  0001 C CNN
 	1    11750 7850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5D96E097
-P 11750 7950
-F 0 "JP4" H 11700 7900 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 11750 8064 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 11750 7950 50  0001 C CNN
-F 3 "~" H 11750 7950 50  0001 C CNN
-	1    11750 7950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2836,33 +2821,14 @@ F 3 "~" H 11750 8050 50  0001 C CNN
 	1    11750 8050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP6
-U 1 1 5D96E273
-P 11750 8150
-F 0 "JP6" H 11700 8100 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 11750 8264 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 11750 8150 50  0001 C CNN
-F 3 "~" H 11750 8150 50  0001 C CNN
-	1    11750 8150
-	1    0    0    -1  
-$EndComp
 Text GLabel 15100 3200 2    50   Input ~ 0
 ADC0
-Text GLabel 15100 3300 2    50   Input ~ 0
-ADC1
 Text GLabel 15100 3500 2    50   Input ~ 0
-ADC2
-Text GLabel 15100 3600 2    50   Input ~ 0
-ADC3
+ADC1
 Wire Wire Line
 	15100 3200 14750 3200
 Wire Wire Line
-	15100 3300 14750 3300
-Wire Wire Line
 	14750 3500 15100 3500
-Wire Wire Line
-	15100 3600 14750 3600
 Wire Wire Line
 	13300 4500 13450 4500
 Wire Wire Line
@@ -4075,10 +4041,10 @@ Wire Wire Line
 Wire Wire Line
 	10100 10500 10100 10800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5C1EFFE1
 P 7850 10850
-F 0 "#PWR?" H 7850 10600 50  0001 C CNN
+F 0 "#PWR0102" H 7850 10600 50  0001 C CNN
 F 1 "GND" H 7855 10677 50  0000 C CNN
 F 2 "" H 7850 10850 50  0001 C CNN
 F 3 "" H 7850 10850 50  0001 C CNN
@@ -4125,4 +4091,194 @@ Wire Wire Line
 	12100 7050 12100 7100
 Wire Wire Line
 	12100 7100 12000 7100
+NoConn ~ 14750 3300
+NoConn ~ 14750 3600
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C18A8D8
+P 9200 6550
+F 0 "JP?" H 9200 6663 50  0000 C CNN
+F 1 "0 OHM" H 9200 6664 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" H 9200 6550 50  0001 C CNN
+F 3 "~" H 9200 6550 50  0001 C CNN
+	1    9200 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C18AEC6
+P 9000 6650
+F 0 "#PWR?" H 9000 6400 50  0001 C CNN
+F 1 "GND" H 9005 6477 50  0000 C CNN
+F 2 "" H 9000 6650 50  0001 C CNN
+F 3 "" H 9000 6650 50  0001 C CNN
+	1    9000 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C18B0D2
+P 9400 6700
+F 0 "#PWR?" H 9400 6500 50  0001 C CNN
+F 1 "GNDPWR" H 9404 6546 50  0000 C CNN
+F 2 "" H 9400 6650 50  0001 C CNN
+F 3 "" H 9400 6650 50  0001 C CNN
+	1    9400 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 6700 9400 6550
+Wire Wire Line
+	9400 6550 9350 6550
+Wire Wire Line
+	9050 6550 9000 6550
+Wire Wire Line
+	9000 6550 9000 6650
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C35D503
+P 9200 6400
+F 0 "JP?" H 9200 6513 50  0000 C CNN
+F 1 "0 OHM" H 9200 6514 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" H 9200 6400 50  0001 C CNN
+F 3 "~" H 9200 6400 50  0001 C CNN
+	1    9200 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C35D62F
+P 9200 6250
+F 0 "JP?" H 9200 6363 50  0000 C CNN
+F 1 "0 OHM" H 9200 6364 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" H 9200 6250 50  0001 C CNN
+F 3 "~" H 9200 6250 50  0001 C CNN
+	1    9200 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C35D761
+P 9200 6100
+F 0 "JP?" H 9200 6213 50  0000 C CNN
+F 1 "0 OHM" H 9200 6214 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" H 9200 6100 50  0001 C CNN
+F 3 "~" H 9200 6100 50  0001 C CNN
+	1    9200 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C35D9AE
+P 9200 5900
+F 0 "JP?" H 9200 6013 50  0000 C CNN
+F 1 "0 OHM" H 9200 6014 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" H 9200 5900 50  0001 C CNN
+F 3 "~" H 9200 5900 50  0001 C CNN
+	1    9200 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5900 9000 5900
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C35D9B7
+P 9200 5750
+F 0 "JP?" H 9200 5863 50  0000 C CNN
+F 1 "0 OHM" H 9200 5864 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" H 9200 5750 50  0001 C CNN
+F 3 "~" H 9200 5750 50  0001 C CNN
+	1    9200 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C35D9BE
+P 9200 5600
+F 0 "JP?" H 9200 5713 50  0000 C CNN
+F 1 "0 OHM" H 9200 5714 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" H 9200 5600 50  0001 C CNN
+F 3 "~" H 9200 5600 50  0001 C CNN
+	1    9200 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C35D9C5
+P 9200 5450
+F 0 "JP?" H 9200 5563 50  0000 C CNN
+F 1 "0 OHM" H 9200 5564 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" H 9200 5450 50  0001 C CNN
+F 3 "~" H 9200 5450 50  0001 C CNN
+	1    9200 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 5900 9000 6100
+Connection ~ 9000 6550
+Wire Wire Line
+	9050 6400 9000 6400
+Connection ~ 9000 6400
+Wire Wire Line
+	9000 6400 9000 6550
+Wire Wire Line
+	9050 6250 9000 6250
+Connection ~ 9000 6250
+Wire Wire Line
+	9000 6250 9000 6400
+Wire Wire Line
+	9050 6100 9000 6100
+Connection ~ 9000 6100
+Wire Wire Line
+	9000 6100 9000 6250
+Connection ~ 9000 5900
+Wire Wire Line
+	9050 5600 9000 5600
+Wire Wire Line
+	9050 5450 9000 5450
+Wire Wire Line
+	9000 5450 9000 5600
+Connection ~ 9000 5600
+Wire Wire Line
+	9400 6550 9400 6400
+Wire Wire Line
+	9400 5450 9350 5450
+Connection ~ 9400 6550
+Wire Wire Line
+	9350 5600 9400 5600
+Connection ~ 9400 5600
+Wire Wire Line
+	9400 5600 9400 5450
+Wire Wire Line
+	9350 5900 9400 5900
+Connection ~ 9400 5900
+Wire Wire Line
+	9350 6100 9400 6100
+Connection ~ 9400 6100
+Wire Wire Line
+	9400 6100 9400 5900
+Wire Wire Line
+	9350 6250 9400 6250
+Connection ~ 9400 6250
+Wire Wire Line
+	9400 6250 9400 6100
+Wire Wire Line
+	9350 6400 9400 6400
+Connection ~ 9400 6400
+Wire Wire Line
+	9400 6400 9400 6250
+Wire Wire Line
+	9400 5600 9400 5750
+Wire Wire Line
+	9000 5600 9000 5750
+Wire Wire Line
+	9350 5750 9400 5750
+Connection ~ 9400 5750
+Wire Wire Line
+	9400 5750 9400 5900
+Wire Wire Line
+	9050 5750 9000 5750
+Connection ~ 9000 5750
+Wire Wire Line
+	9000 5750 9000 5900
 $EndSCHEMATC
