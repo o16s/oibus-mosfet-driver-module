@@ -221,7 +221,7 @@ U 1 1 5C086A21
 P 10600 10200
 F 0 "J3" H 10628 10176 50  0000 L CNN
 F 1 "5V - 24V, Molex Ultrafit" H 10550 10300 50  0000 L CNN
-F 2 "172310-1202:172310-1202" H 10600 10200 50  0001 C CNN
+F 2 "172310-1202:MOLEX_172310-1202" H 10600 10200 50  0001 C CNN
 F 3 "~" H 10600 10200 50  0001 C CNN
 	1    10600 10200
 	1    0    0    -1  
@@ -277,8 +277,6 @@ F 3 "" H 10100 10750 50  0001 C CNN
 	1    10100 10800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10100 10500 10100 10650
 Wire Wire Line
 	10400 10300 10300 10300
 Wire Wire Line
@@ -2525,7 +2523,7 @@ $EndComp
 Wire Wire Line
 	14800 6050 14650 6050
 Wire Wire Line
-	14650 6150 14800 6150
+	14650 6150 14700 6150
 Wire Wire Line
 	14800 6150 14800 6050
 Connection ~ 14800 6050
@@ -2805,10 +2803,6 @@ Text GLabel 11900 8050 2    50   Input ~ 0
 ADC2
 Text GLabel 11900 8150 2    50   Input ~ 0
 ADC3
-Text GLabel 11900 8250 2    50   Input ~ 0
-ADC4
-Text GLabel 11900 8350 2    50   Input ~ 0
-ADC5
 $Comp
 L Jumper:SolderJumper_2_Open JP3
 U 1 1 5D96CA64
@@ -2853,28 +2847,6 @@ F 3 "~" H 11750 8150 50  0001 C CNN
 	1    11750 8150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP7
-U 1 1 5D96E364
-P 11750 8250
-F 0 "JP7" H 11700 8200 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 11750 8364 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 11750 8250 50  0001 C CNN
-F 3 "~" H 11750 8250 50  0001 C CNN
-	1    11750 8250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP8
-U 1 1 5D96E456
-P 11750 8350
-F 0 "JP8" H 11700 8300 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 11750 8464 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 11750 8350 50  0001 C CNN
-F 3 "~" H 11750 8350 50  0001 C CNN
-	1    11750 8350
-	1    0    0    -1  
-$EndComp
 Text GLabel 15100 3200 2    50   Input ~ 0
 ADC0
 Text GLabel 15100 3300 2    50   Input ~ 0
@@ -2883,10 +2855,6 @@ Text GLabel 15100 3500 2    50   Input ~ 0
 ADC2
 Text GLabel 15100 3600 2    50   Input ~ 0
 ADC3
-Text GLabel 15100 3700 2    50   Input ~ 0
-ADC4
-Text GLabel 15100 3800 2    50   Input ~ 0
-ADC5
 Wire Wire Line
 	15100 3200 14750 3200
 Wire Wire Line
@@ -2895,10 +2863,6 @@ Wire Wire Line
 	14750 3500 15100 3500
 Wire Wire Line
 	15100 3600 14750 3600
-Wire Wire Line
-	14750 3700 15100 3700
-Wire Wire Line
-	15100 3800 14750 3800
 Wire Wire Line
 	13300 4500 13450 4500
 Wire Wire Line
@@ -2998,21 +2962,10 @@ F 3 "" H 11750 1050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10850 1050 11750 1050
-Text GLabel 12100 7050 2    50   Input ~ 0
+Text GLabel 12200 6950 2    50   Input ~ 0
 Tx
 Text GLabel 12100 7150 2    50   Input ~ 0
 Rx
-$Comp
-L Jumper:SolderJumper_3_Open JP1
-U 1 1 5E08FA34
-P 11850 7050
-F 0 "JP1" H 11700 6950 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 11850 7253 50  0001 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 11850 7050 50  0001 C CNN
-F 3 "~" H 11850 7050 50  0001 C CNN
-	1    11850 7050
-	-1   0    0    1   
-$EndComp
 $Comp
 L Jumper:SolderJumper_3_Open JP2
 U 1 1 5E09018A
@@ -3029,11 +2982,7 @@ Wire Wire Line
 Wire Wire Line
 	11750 7500 11800 7500
 Wire Wire Line
-	12100 7050 12050 7050
-Wire Wire Line
 	12100 7150 12050 7150
-Wire Wire Line
-	11650 7050 11600 7050
 Wire Wire Line
 	11650 7150 11600 7150
 $Comp
@@ -3048,121 +2997,11 @@ F 3 "~" H 12600 7150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	11850 6900 11850 6800
-Wire Wire Line
-	11850 6800 12400 6800
-Wire Wire Line
-	12400 6800 12400 7050
-Wire Wire Line
 	12400 7150 12400 7400
 Wire Wire Line
 	12400 7400 11850 7400
 Wire Wire Line
 	11850 7400 11850 7300
-Text GLabel 10200 6350 0    50   Input ~ 0
-In3
-Text GLabel 10200 6250 0    50   Input ~ 0
-In4
-Text GLabel 10200 6150 0    50   Input ~ 0
-In5
-Text GLabel 10200 6050 0    50   Input ~ 0
-In6
-Text GLabel 10200 5950 0    50   Input ~ 0
-In7
-Text GLabel 10200 5850 0    50   Input ~ 0
-In8
-$Comp
-L Jumper:SolderJumper_2_Open JP15
-U 1 1 5E219003
-P 10350 6350
-F 0 "JP15" H 10300 6300 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 10350 6464 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 10350 6350 50  0001 C CNN
-F 3 "~" H 10350 6350 50  0001 C CNN
-	1    10350 6350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP16
-U 1 1 5E21900A
-P 10350 6250
-F 0 "JP16" H 10300 6200 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 10350 6364 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 10350 6250 50  0001 C CNN
-F 3 "~" H 10350 6250 50  0001 C CNN
-	1    10350 6250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP17
-U 1 1 5E219011
-P 10350 6150
-F 0 "JP17" H 10300 6100 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 10350 6264 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 10350 6150 50  0001 C CNN
-F 3 "~" H 10350 6150 50  0001 C CNN
-	1    10350 6150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP18
-U 1 1 5E219018
-P 10350 6050
-F 0 "JP18" H 10300 6000 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 10350 6164 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 10350 6050 50  0001 C CNN
-F 3 "~" H 10350 6050 50  0001 C CNN
-	1    10350 6050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP19
-U 1 1 5E21901F
-P 10350 5950
-F 0 "JP19" H 10300 5900 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 10350 6064 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 10350 5950 50  0001 C CNN
-F 3 "~" H 10350 5950 50  0001 C CNN
-	1    10350 5950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP20
-U 1 1 5E219026
-P 10350 5850
-F 0 "JP20" H 10300 5800 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 10350 5964 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 10350 5850 50  0001 C CNN
-F 3 "~" H 10350 5850 50  0001 C CNN
-	1    10350 5850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP13
-U 1 1 5E2FB309
-P 10350 6550
-F 0 "JP13" H 10300 6500 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 10350 6664 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 10350 6550 50  0001 C CNN
-F 3 "~" H 10350 6550 50  0001 C CNN
-	1    10350 6550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP14
-U 1 1 5E2FB310
-P 10350 6450
-F 0 "JP14" H 10300 6400 12  0000 C CNN
-F 1 "SolderJumper_2_Open" H 10350 6564 50  0001 C CNN
-F 2 "Resistors_SMD:R_0603" H 10350 6450 50  0001 C CNN
-F 3 "~" H 10350 6450 50  0001 C CNN
-	1    10350 6450
-	-1   0    0    1   
-$EndComp
-Text GLabel 10200 6550 0    50   Input ~ 0
-In1
-Text GLabel 10200 6450 0    50   Input ~ 0
-In2
 Text GLabel 13350 3500 0    50   Input ~ 0
 GPIO1
 Text GLabel 13350 3600 0    50   Input ~ 0
@@ -4172,14 +4011,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 10550 8000 10550
 Connection ~ 7850 10150
-Wire Wire Line
-	7850 10550 7850 10650
-Wire Wire Line
-	7850 10650 10100 10650
 Connection ~ 7850 10550
-Connection ~ 10100 10650
-Wire Wire Line
-	10100 10650 10100 10800
 Wire Wire Line
 	5250 1150 5250 850 
 Wire Wire Line
@@ -4240,4 +4072,57 @@ Wire Wire Line
 	8850 850  8050 850 
 Wire Wire Line
 	8050 850  8050 1150
+Wire Wire Line
+	10100 10500 10100 10800
+$Comp
+L power:GND #PWR?
+U 1 1 5C1EFFE1
+P 7850 10850
+F 0 "#PWR?" H 7850 10600 50  0001 C CNN
+F 1 "GND" H 7855 10677 50  0000 C CNN
+F 2 "" H 7850 10850 50  0001 C CNN
+F 3 "" H 7850 10850 50  0001 C CNN
+	1    7850 10850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 10550 7850 10850
+Wire Wire Line
+	14700 6250 14700 6150
+Connection ~ 14700 6150
+Wire Wire Line
+	14700 6150 14800 6150
+NoConn ~ 10500 6550
+NoConn ~ 10500 6450
+NoConn ~ 10500 6350
+NoConn ~ 10500 6250
+NoConn ~ 10500 6150
+NoConn ~ 10500 6050
+NoConn ~ 10500 5950
+NoConn ~ 10500 5850
+NoConn ~ 14750 3700
+NoConn ~ 14750 3800
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5E08FA34
+P 12000 6950
+F 0 "JP1" H 11850 6850 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 12000 7153 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 12000 6950 50  0001 C CNN
+F 3 "~" H 12000 6950 50  0001 C CNN
+	1    12000 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11800 6950 11750 6950
+Wire Wire Line
+	11750 6950 11750 7050
+Wire Wire Line
+	11600 7050 11750 7050
+Wire Wire Line
+	12400 7050 12100 7050
+Wire Wire Line
+	12100 7050 12100 7100
+Wire Wire Line
+	12100 7100 12000 7100
 $EndSCHEMATC
