@@ -3,7 +3,4 @@
   (lib (name 172310-1202)(type Legacy)(uri ${KIPRJMOD}/lib_fp/172310-1202.mod)(options "")(descr ""))
   (lib (name DMG6602SVT-7)(type Legacy)(uri ${KIPRJMOD}/lib_fp/DMG6602SVT-7.mod)(options "")(descr ""))
   (lib (name FM4004W-W)(type Legacy)(uri ${KIPRJMOD}/lib_fp/FM4004W-W.mod)(options "")(descr ""))
-  (lib (name Jumper)(type KiCad)(uri /Volumes/Serendipity/Repositories/Octanis/kicad-footprints/Jumper.pretty)(options "")(descr ""))
-  (lib (name Package_DIP)(type KiCad)(uri /Volumes/Serendipity/Repositories/Octanis/kicad-footprints/Package_DIP.pretty)(options "")(descr ""))
-  (lib (name Package_QFP)(type KiCad)(uri /Volumes/Serendipity/Repositories/Octanis/kicad-footprints/Package_QFP.pretty)(options "")(descr ""))
 )
