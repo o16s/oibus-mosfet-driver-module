@@ -5,7 +5,7 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "OIBUS MOSFET Driver Module (P4L3)(P5)(V)(USER)(COMM)"
+Title "OIBUS MOSFET Driver Module (P4L4)(V*)(USER02)(COMM)"
 Date "2018-12-05"
 Rev "1"
 Comp "Octanis Instruments OÜ"
@@ -2928,27 +2928,25 @@ F 3 "" H 11750 1050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10850 1050 11750 1050
-Text GLabel 12200 6950 2    50   Input ~ 0
+Text GLabel 12150 7100 2    50   Input ~ 0
 Tx
-Text GLabel 12100 7150 2    50   Input ~ 0
+Text GLabel 12150 7350 2    50   Input ~ 0
 Rx
 $Comp
 L Jumper:SolderJumper_3_Open JP2
 U 1 1 5E09018A
-P 11850 7150
-F 0 "JP2" H 12000 7000 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 11850 7353 50  0001 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 11850 7150 50  0001 C CNN
-F 3 "~" H 11850 7150 50  0001 C CNN
-	1    11850 7150
+P 11850 7200
+F 0 "JP2" H 12000 7050 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 11850 7403 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 11850 7200 50  0001 C CNN
+F 3 "~" H 11850 7200 50  0001 C CNN
+	1    11850 7200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	11750 7350 11750 7500
 Wire Wire Line
 	11750 7500 11800 7500
-Wire Wire Line
-	12100 7150 12050 7150
 Wire Wire Line
 	11650 7150 11600 7150
 $Comp
@@ -2962,12 +2960,6 @@ F 3 "~" H 12600 7150 50  0001 C CNN
 	1    12600 7150
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	12400 7150 12400 7400
-Wire Wire Line
-	12400 7400 11850 7400
-Wire Wire Line
-	11850 7400 11850 7300
 Text GLabel 13350 3500 0    50   Input ~ 0
 GPIO1
 Text GLabel 13350 3600 0    50   Input ~ 0
@@ -4085,12 +4077,6 @@ Wire Wire Line
 	11750 6950 11750 7050
 Wire Wire Line
 	11600 7050 11750 7050
-Wire Wire Line
-	12400 7050 12100 7050
-Wire Wire Line
-	12100 7050 12100 7100
-Wire Wire Line
-	12100 7100 12000 7100
 NoConn ~ 14750 3300
 NoConn ~ 14750 3600
 $Comp
@@ -4303,4 +4289,22 @@ F 3 "~" H 9600 9550 50  0001 C CNN
 	1    9600 9550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	12400 7050 12350 7050
+Wire Wire Line
+	12350 7050 12350 6950
+Wire Wire Line
+	12350 6950 12200 6950
+Wire Wire Line
+	11850 7350 12150 7350
+Wire Wire Line
+	12400 7150 12350 7150
+Wire Wire Line
+	12350 7150 12350 7200
+Wire Wire Line
+	12350 7200 12050 7200
+Wire Wire Line
+	12150 7100 12000 7100
+Wire Wire Line
+	11650 7150 11650 7200
 $EndSCHEMATC
