@@ -3,4 +3,5 @@
   (lib (name 172310-1202)(type Legacy)(uri ${KIPRJMOD}/lib_fp/172310-1202.mod)(options "")(descr ""))
   (lib (name DMG6602SVT-7)(type Legacy)(uri ${KIPRJMOD}/lib_fp/DMG6602SVT-7.mod)(options "")(descr ""))
   (lib (name FM4004W-W)(type Legacy)(uri ${KIPRJMOD}/lib_fp/FM4004W-W.mod)(options "")(descr ""))
+  (lib (name "TLP291(SE")(type Legacy)(uri "${KIPRJMOD}/lib_fp/TLP291(SE.mod")(options "")(descr ""))
 )
