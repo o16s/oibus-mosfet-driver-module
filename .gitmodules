@@ -1,0 +1,3 @@
+[submodule "stm32-firmware/Inc/libcanard"]
+	path = stm32-firmware/Inc/libcanard
+	url = https://github.com/UAVCAN/libcanard

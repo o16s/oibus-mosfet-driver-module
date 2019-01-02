@@ -45,6 +45,10 @@
 #include "usart.h"
 #include "gpio.h"
 
+#include "libcanard/canard.h"
+#include "libcanard/drivers/stm32/canard_stm32.h"
+
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
