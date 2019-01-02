@@ -3728,7 +3728,7 @@ U 1 1 5CEBBDDD
 P 2600 9250
 F 0 "U11" H 2600 9575 50  0000 C CNN
 F 1 "TLP291" H 2600 9484 50  0000 C CNN
-F 2 "Package_DIP:SMDIP-4_W7.62mm" H 2400 9050 50  0001 L CIN
+F 2 "TLP291(SE:SOIC127P700X220-4N" H 2400 9050 50  0001 L CIN
 F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 2600 9250 50  0001 L CNN
 	1    2600 9250
 	1    0    0    -1  
@@ -3757,7 +3757,7 @@ U 1 1 5CEBBDED
 P 2600 10100
 F 0 "U12" H 2600 10425 50  0000 C CNN
 F 1 "TLP291" H 2600 10334 50  0000 C CNN
-F 2 "Package_DIP:SMDIP-4_W7.62mm" H 2400 9900 50  0001 L CIN
+F 2 "TLP291(SE:SOIC127P700X220-4N" H 2400 9900 50  0001 L CIN
 F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 2600 10100 50  0001 L CNN
 	1    2600 10100
 	1    0    0    -1  
@@ -4307,4 +4307,26 @@ Wire Wire Line
 	12150 7100 12000 7100
 Wire Wire Line
 	11650 7150 11650 7200
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 5C341F6F
+P 10300 9550
+F 0 "FID4" H 10385 9596 50  0000 L CNN
+F 1 "Fiducial" H 10385 9505 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2mm_Outer" H 10300 9550 50  0001 C CNN
+F 3 "~" H 10300 9550 50  0001 C CNN
+	1    10300 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5C3420AA
+P 10300 9200
+F 0 "FID3" H 10385 9246 50  0000 L CNN
+F 1 "Fiducial" H 10385 9155 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Dia_2mm_Outer" H 10300 9200 50  0001 C CNN
+F 3 "~" H 10300 9200 50  0001 C CNN
+	1    10300 9200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

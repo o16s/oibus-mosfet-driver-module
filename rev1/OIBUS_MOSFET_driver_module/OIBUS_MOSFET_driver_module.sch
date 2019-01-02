@@ -4273,7 +4273,7 @@ U 1 1 5C1E4BDC
 P 9600 9200
 F 0 "FID1" H 9685 9246 50  0000 L CNN
 F 1 "Fiducial" H 9685 9155 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Dia_2mm_Outer" H 9600 9200 50  0001 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2mm_Outer" H 9600 9200 50  0001 C CNN
 F 3 "~" H 9600 9200 50  0001 C CNN
 	1    9600 9200
 	1    0    0    -1  
@@ -4284,7 +4284,7 @@ U 1 1 5C1E5264
 P 9600 9550
 F 0 "FID2" H 9685 9596 50  0000 L CNN
 F 1 "Fiducial" H 9685 9505 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Dia_2mm_Outer" H 9600 9550 50  0001 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2mm_Outer" H 9600 9550 50  0001 C CNN
 F 3 "~" H 9600 9550 50  0001 C CNN
 	1    9600 9550
 	1    0    0    -1  
@@ -4307,4 +4307,26 @@ Wire Wire Line
 	12150 7100 12000 7100
 Wire Wire Line
 	11650 7150 11650 7200
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 5C341F6F
+P 10300 9550
+F 0 "FID4" H 10385 9596 50  0000 L CNN
+F 1 "Fiducial" H 10385 9505 50  0000 L CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2mm_Outer" H 10300 9550 50  0001 C CNN
+F 3 "~" H 10300 9550 50  0001 C CNN
+	1    10300 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5C3420AA
+P 10300 9200
+F 0 "FID3" H 10385 9246 50  0000 L CNN
+F 1 "Fiducial" H 10385 9155 50  0000 L CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2mm_Outer" H 10300 9200 50  0001 C CNN
+F 3 "~" H 10300 9200 50  0001 C CNN
+	1    10300 9200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
