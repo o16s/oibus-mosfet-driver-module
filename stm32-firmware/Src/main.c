@@ -10,7 +10,7 @@
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
-  * COPYRIGHT(c) 2018 STMicroelectronics
+  * COPYRIGHT(c) 2019 STMicroelectronics
   *
   * Redistribution and use in source and binary forms, with or without modification,
   * are permitted provided that the following conditions are met:
@@ -44,10 +44,6 @@
 #include "can.h"
 #include "usart.h"
 #include "gpio.h"
-
-#include "libcanard/canard.h"
-#include "libcanard/drivers/stm32/canard_stm32.h"
-
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -90,48 +86,6 @@ void SystemClock_Config(void);
   * @brief  The application entry point.
   * @retval int
   */
-int main(void)
-{
-  /* USER CODE BEGIN 1 */
-
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
-  SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_ADC1_Init();
-  MX_ADC2_Init();
-  MX_CAN_Init();
-  MX_USART3_UART_Init();
-  /* USER CODE BEGIN 2 */
-
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-  }
-  /* USER CODE END 3 */
-}
 
 /**
   * @brief System Clock Configuration
@@ -179,7 +133,63 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+int main(void)
+{
+  /* USER CODE BEGIN 1 */
 
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_ADC1_Init();
+  MX_ADC2_Init();
+  MX_CAN_Init();
+  MX_USART3_UART_Init();
+  /* USER CODE BEGIN 2 */
+
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+	  HAL_GPIO_TogglePin(GPIOA, LED_Pin);
+
+	  HAL_GPIO_TogglePin(GPIOB, In1_Pin);
+	  HAL_GPIO_TogglePin(GPIOB, In2_Pin);
+	  HAL_GPIO_TogglePin(GPIOA, In3_Pin);
+	  HAL_GPIO_TogglePin(GPIOA, In4_Pin);
+	  HAL_GPIO_TogglePin(GPIOA, In5_Pin);
+	  HAL_GPIO_TogglePin(GPIOA, In6_Pin);
+	  HAL_GPIO_TogglePin(GPIOA, In7_Pin);
+	  HAL_GPIO_TogglePin(GPIOC, In8_Pin);
+	  HAL_GPIO_TogglePin(GPIOB, In9_Pin);
+	  HAL_GPIO_TogglePin(GPIOA, In10_Pin);
+
+	  HAL_Delay(500);
+
+
+    /* USER CODE BEGIN 3 */
+  }
+  /* USER CODE END 3 */
+}
 /* USER CODE END 4 */
 
 /**
