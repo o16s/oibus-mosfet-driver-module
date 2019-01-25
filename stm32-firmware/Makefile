@@ -62,7 +62,9 @@ Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c \
-Src/system_stm32f3xx.c  
+Src/system_stm32f3xx.c \
+Lib/libcanard/canard.c \
+Lib/libcanard/drivers/stm32/canard_stm32.c \
 
 # ASM sources
 ASM_SOURCES =  \
@@ -124,7 +126,9 @@ C_INCLUDES =  \
 -IDrivers/STM32F3xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32F3xx/Include \
 -IDrivers/CMSIS/Include \
--IDrivers/CMSIS/Include
+-IDrivers/CMSIS/Include \
+-ILib/libcanard \
+-ILib/libcanard/drivers/stm32 \
 
 
 # compile gcc flags
@@ -185,11 +189,21 @@ $(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
 $(BUILD_DIR):
 	mkdir $@		
 
+
+
 #######################################
 # clean up
 #######################################
 clean:
 	-rm -fR $(BUILD_DIR)
+
+#######################################
+# flash the chip
+#######################################
+flash:
+	openocd -d0 -f stm32f3.cfg -c "init;reset halt;stm32f3x mass_erase 0;flash write_image build/STM32F303CCT6_oibus_mosfet_driver_module_rev1.hex;reset run;shutdown"
+
+
   
 #######################################
 # dependencies
