@@ -64,7 +64,9 @@ void MX_CAN_Init(void)
   hcan.Init.TransmitFifoPriority = DISABLE;
   if (HAL_CAN_Init(&hcan) != HAL_OK)
   {
-    Error_Handler();
+
+	  
+	  Error_Handler();
   }
 
 }
