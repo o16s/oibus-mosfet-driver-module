@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name DMG6402LVT)(type Legacy)(uri ${KIPRJMOD}/lib_sch/DMG6402LVT.lib)(options "")(descr ""))
+  (lib (name OIBUS_MOSFET_driver_module-rescue)(type Legacy)(uri ${KIPRJMOD}/OIBUS_MOSFET_driver_module-rescue.lib)(options "")(descr ""))
 )
