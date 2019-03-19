@@ -91,7 +91,16 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void vApplicationStackOverflowHook( TaskHandle_t xTask,
+                                    signed char *pcTaskName ){
 
+  while(1){
+    HAL_GPIO_TogglePin(GPIOA, LED_Pin);
+    for(int i; i<10000; i++) {
+      int a = i*32;
+    } 
+  }
+}
 /* USER CODE END 0 */
 
 /**
@@ -128,7 +137,7 @@ int main(void)
   MX_USART3_UART_Init();
 
   /* USER CODE BEGIN 2 */
-  
+
 
 
   /* USER CODE END 2 */

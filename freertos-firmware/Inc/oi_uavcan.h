@@ -15,6 +15,14 @@ extern "C" {
 #define APP_NODE_NAME                                               "ch.octanis.oibus.mosfet-driver-module"
 
 
+#define UAVCAN_NODE_HEALTH_OK                                       0
+#define UAVCAN_NODE_HEALTH_WARNING                                  1
+#define UAVCAN_NODE_HEALTH_ERROR                                    2
+#define UAVCAN_NODE_HEALTH_CRITICAL                                 3
+
+#define UAVCAN_NODE_MODE_OPERATIONAL                                0
+#define UAVCAN_NODE_MODE_INITIALIZATION                             1
+
 /*
  * Some useful constants defined by the UAVCAN specification.
  * Data type signature values can be easily obtained with the script show_data_type_info.py
@@ -24,17 +32,17 @@ extern "C" {
 #define UAVCAN_NODE_ID_ALLOCATION_RANDOM_TIMEOUT_RANGE_USEC         400000UL
 #define UAVCAN_NODE_ID_ALLOCATION_REQUEST_DELAY_OFFSET_USEC         600000UL
 
+// node status type
 #define UAVCAN_NODE_STATUS_MESSAGE_SIZE                             7
 #define UAVCAN_NODE_STATUS_DATA_TYPE_ID                             341
 #define UAVCAN_NODE_STATUS_DATA_TYPE_SIGNATURE                      0x0f0868d0c1a7c6f1
 
-#define UAVCAN_NODE_HEALTH_OK                                       0
-#define UAVCAN_NODE_HEALTH_WARNING                                  1
-#define UAVCAN_NODE_HEALTH_ERROR                                    2
-#define UAVCAN_NODE_HEALTH_CRITICAL                                 3
 
-#define UAVCAN_NODE_MODE_OPERATIONAL                                0
-#define UAVCAN_NODE_MODE_INITIALIZATION                             1
+// key value log message type
+#define UAVCAN_PROTOCOL_DEBUG_KEYVALUE_ID              16370
+#define UAVCAN_PROTOCOL_DEBUG_KEYVALUE_SIGNATURE       0xe02f25d6e0c98ae0
+#define UAVCAN_PROTOCOL_DEBUG_KEYVALUE_MESSAGE_SIZE    62
+
 
 #define UAVCAN_GET_NODE_INFO_RESPONSE_MAX_SIZE                      ((3015 + 7) / 8)
 #define UAVCAN_GET_NODE_INFO_DATA_TYPE_SIGNATURE                    0xee468a8121c46a9e
@@ -48,7 +56,7 @@ extern "C" {
 
 #define UNIQUE_ID_LENGTH_BYTES 16
 
-#define CANARD_SPIN_PERIOD   1000
+#define CANARD_SPIN_PERIOD   1500
 
 #define FIRMWARE_GIT_HASH					    0
 #define UAVCAN_NODE_ID						    111
@@ -77,6 +85,7 @@ void oi_uavcan_spinCanard(uint32_t time);
 void oi_uavcan_init(void);
 param_t* oi_uavcan_getParamByIndex(uint16_t index);
 param_t* oi_uavcan_getParamByName(uint8_t * name);
+void oi_uavcan_publish_keyVal(char * key[3], float val);
 
 
 

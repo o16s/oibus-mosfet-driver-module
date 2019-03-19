@@ -5,7 +5,8 @@
 #include "stm32f3xx_hal.h"
 #include "gpio.h"
 
-
+#include <string.h>
+#include <stdint.h>
 
 /**********
  private variables
@@ -36,6 +37,7 @@ static void readUniqueID(uint8_t* out_uid)
        out_uid[i] = i;
    }
 }
+
 
 static void makeNodeStatusMessage(uint8_t buffer[UAVCAN_NODE_STATUS_MESSAGE_SIZE])
 {
@@ -315,23 +317,25 @@ void oi_uavcan_spinCanard(uint32_t time)
 
 	static uint32_t spin_time = 0;
   if (time < spin_time + CANARD_SPIN_PERIOD) {
-	return;
+	   return;
+  }else{
+
+      spin_time = time;
+
+      uint8_t buffer[UAVCAN_NODE_STATUS_MESSAGE_SIZE];
+      static uint8_t transfer_id = 0;                          // This variable MUST BE STATIC; refer to the libcanard documentation for the background
+
+      makeNodeStatusMessage(buffer);
+      canardBroadcast(&g_canard,
+                        UAVCAN_NODE_STATUS_DATA_TYPE_SIGNATURE,
+                        UAVCAN_NODE_STATUS_DATA_TYPE_ID,
+                        &transfer_id,
+                        CANARD_TRANSFER_PRIORITY_LOW,
+                        buffer,
+                        UAVCAN_NODE_STATUS_MESSAGE_SIZE);
+
   }  // rate limiting
 
-  spin_time = time;
-
-  uint8_t buffer[UAVCAN_NODE_STATUS_MESSAGE_SIZE];
-  static uint8_t transfer_id = 0;                          // This variable MUST BE STATIC; refer to the libcanard documentation for the background
-
-  makeNodeStatusMessage(buffer);
-
-  canardBroadcast(&g_canard,
-                    UAVCAN_NODE_STATUS_DATA_TYPE_SIGNATURE,
-                    UAVCAN_NODE_STATUS_DATA_TYPE_ID,
-                    &transfer_id,
-                    CANARD_TRANSFER_PRIORITY_LOW,
-                    buffer,
-                    UAVCAN_NODE_STATUS_MESSAGE_SIZE);
 }
 
 
@@ -357,4 +361,21 @@ void oi_uavcan_receiveCanard(void)
    if(res){
      canardHandleRxFrame(&g_canard, &rx_frame, g_uptime * 1000);
    }
+}
+
+
+void oi_uavcan_publish_keyVal(char * key[3], float val){
+
+  uint8_t buffer[UAVCAN_PROTOCOL_DEBUG_KEYVALUE_MESSAGE_SIZE];
+  memset(buffer,0x00,UAVCAN_PROTOCOL_DEBUG_KEYVALUE_MESSAGE_SIZE);
+  static uint8_t transfer_id = 0;                          // This variable MUST BE STATIC; refer to the libcanard documentation for the background
+  canardEncodeScalar(buffer, 0, 32, &val);
+  memcpy(&buffer[4], key, 3);
+  canardBroadcast(&g_canard,
+                UAVCAN_PROTOCOL_DEBUG_KEYVALUE_SIGNATURE,
+                UAVCAN_PROTOCOL_DEBUG_KEYVALUE_ID,
+                &transfer_id,
+                CANARD_TRANSFER_PRIORITY_LOW,
+                &buffer[0],
+                7);
 }

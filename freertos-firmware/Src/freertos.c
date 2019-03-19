@@ -121,7 +121,7 @@ void MX_FREERTOS_Init(void) {
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  osThreadDef(UAVCANTask, StartUAVCANTask, osPriorityHigh, 1, 1024);  // define job1 as thread function
+  osThreadDef(UAVCANTask, StartUAVCANTask, osPriorityHigh, 1, 256);  // define job1 as thread function
   osThreadCreate(osThread(UAVCANTask),NULL);
   /* USER CODE END RTOS_THREADS */
 
@@ -158,8 +158,13 @@ void StartDefaultTask(void const * argument)
         oi_driver_set(GPIOB, In9_Pin, 8, p->val);
         oi_driver_set(GPIOA, In10_Pin, 9, p->val);
 
+        uint16_t uxHighWaterMark;
+        uxHighWaterMark = uxTaskGetStackHighWaterMark( NULL );
+        oi_uavcan_publish_keyVal("def",uxHighWaterMark);
+        
+        HAL_GPIO_TogglePin(GPIOA, LED_Pin);
 
-        osDelay(100);
+        osDelay(1000);
   }
   /* USER CODE END StartDefaultTask */
 }
@@ -172,14 +177,15 @@ void StartUAVCANTask(void const *argument)  {
   oi_uavcan_init();
 
   while (1)  {
-    HAL_GPIO_TogglePin(GPIOA, LED_Pin);
 
     oi_uavcan_sendCanard();
     oi_uavcan_receiveCanard();
     oi_uavcan_spinCanard(osKernelSysTick());
-    osDelay (50);                                // delay execution for 10 milliseconds
+
+    osDelay (10);                                // delay execution for 10 milliseconds
   }
 }
+
 
 /* USER CODE END Application */
 
