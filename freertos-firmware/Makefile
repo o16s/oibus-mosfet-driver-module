@@ -41,6 +41,7 @@ Src/gpio.c \
 Src/adc.c \
 Src/can.c \
 Src/oi_uavcan.c \
+Src/oi_driver.c \
 Src/freertos.c \
 Src/usart.c \
 Src/stm32f3xx_it.c \

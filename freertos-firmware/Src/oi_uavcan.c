@@ -5,17 +5,6 @@
 #include "stm32f3xx_hal.h"
 #include "gpio.h"
 
-/**********
- private types
- **********/
-typedef struct
-{
-    uint8_t* name;
-    int64_t val;
-    int64_t min;
-    int64_t max;
-    int64_t defval;
-} param_t;
 
 
 /**********
@@ -96,27 +85,6 @@ static void getNodeInfoHandleCanard(CanardRxTransfer* transfer)
     }
 }
 
-static inline param_t* getParamByIndex(uint16_t index)
-{
-    if (index >= ARRAY_SIZE(parameters))
-    {
-        return NULL;
-    }
-    return &parameters[index];
-}
-
-
-static inline param_t* getParamByName(uint8_t * name)
-{
-    for (uint16_t i = 0; i < ARRAY_SIZE(parameters); i++)
-    {
-        if (strncmp(name, parameters[i].name, strlen(parameters[i].name)) == 0)
-        {
-              return &parameters[i];
-        }
-    }
-    return NULL;
-}
 
 static uint16_t encodeParamCanard(param_t * p, uint8_t * buffer)
 {
@@ -209,11 +177,11 @@ static void getsetHandleCanard(CanardRxTransfer* transfer){
 
     if (strlen((char const*)name))
     {
-        p = getParamByName(name);
+        p = oi_uavcan_getParamByName(name);
     }
     else
     {
-        p = getParamByIndex(index);
+        p = oi_uavcan_getParamByIndex(index);
     }
 
     if ((p)&&(tag == 1))
@@ -292,6 +260,27 @@ static void onTransferReceived(CanardInstance* ins, CanardRxTransfer* transfer)
 /**********
  public
  **********/
+
+param_t* oi_uavcan_getParamByIndex(uint16_t index)
+{
+   if (index >= ARRAY_SIZE(parameters))
+   {
+       return NULL;
+   }
+   return &parameters[index];
+}
+
+param_t* oi_uavcan_getParamByName(uint8_t * name)
+{
+   for (uint16_t i = 0; i < ARRAY_SIZE(parameters); i++)
+   {
+       if (strncmp(name, parameters[i].name, strlen(parameters[i].name)) == 0)
+       {
+             return &parameters[i];
+       }
+   }
+   return NULL;
+}
 
 void oi_uavcan_init(void)
 {

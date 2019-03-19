@@ -56,11 +56,33 @@ extern "C" {
 #define ARRAY_SIZE(x) ((sizeof(x)/sizeof(0[x])) / ((size_t)(!(sizeof(x) % sizeof(0[x])))))
 
 
+/**********
+ public types
+ **********/
+typedef struct
+{
+    uint8_t* name;
+    int64_t val;
+    int64_t min;
+    int64_t max;
+    int64_t defval;
+} param_t;
 
+/**********
+public functions
+ **********/
 void oi_uavcan_sendCanard(void);
 void oi_uavcan_receiveCanard(void);
 void oi_uavcan_spinCanard(uint32_t time);
 void oi_uavcan_init(void);
+param_t* oi_uavcan_getParamByIndex(uint16_t index);
+param_t* oi_uavcan_getParamByName(uint8_t * name);
+
+
+
+
+
+
 
 
 

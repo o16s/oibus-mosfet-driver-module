@@ -1,13 +1,4 @@
-build/freertos.o: Src/freertos.c \
- Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
- Inc/FreeRTOSConfig.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
- Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/list.h Inc/main.h \
+build/oi_driver.o: Src/oi_driver.c Inc/oi_driver.h \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h \
  Inc/stm32f3xx_hal_conf.h \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h \
@@ -36,36 +27,10 @@ build/freertos.o: Src/freertos.c \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h \
- Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h \
- Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/timers.h Inc/oi_uavcan.h \
- Inc/oi_driver.h Inc/gpio.h Inc/main.h
+ Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h Inc/gpio.h \
+ Inc/main.h
 
-Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
-
-Inc/FreeRTOSConfig.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
-
-Inc/main.h:
+Inc/oi_driver.h:
 
 Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:
 
@@ -128,26 +93,6 @@ Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h:
 Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:
 
 Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
-
-Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
-
-Inc/oi_uavcan.h:
-
-Inc/oi_driver.h:
 
 Inc/gpio.h:
 

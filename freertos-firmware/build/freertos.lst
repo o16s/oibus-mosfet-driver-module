@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s 			page 1
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s 			page 1
   29:Src/freertos.c ****   *    microprocessor devices manufactured by or for STMicroelectronics.
   30:Src/freertos.c ****   * 5. Redistribution and use of this software other than as permitted under
   31:Src/freertos.c ****   *    this license is void and will automatically terminate your rights under
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s 			page 2
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s 			page 2
 
 
   32:Src/freertos.c ****   *    this license.
@@ -86,327 +86,445 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s 			page 1
   54:Src/freertos.c **** #include "main.h"
   55:Src/freertos.c **** #include "cmsis_os.h"
   56:Src/freertos.c **** #include "oi_uavcan.h"
-  57:Src/freertos.c **** 
-  58:Src/freertos.c **** /* Private includes ----------------------------------------------------------*/
-  59:Src/freertos.c **** /* USER CODE BEGIN Includes */
-  60:Src/freertos.c **** 
-  61:Src/freertos.c **** /* USER CODE END Includes */
-  62:Src/freertos.c **** 
-  63:Src/freertos.c **** /* Private typedef -----------------------------------------------------------*/
-  64:Src/freertos.c **** /* USER CODE BEGIN PTD */
-  65:Src/freertos.c **** 
-  66:Src/freertos.c **** /* USER CODE END PTD */
-  67:Src/freertos.c **** 
-  68:Src/freertos.c **** /* Private define ------------------------------------------------------------*/
-  69:Src/freertos.c **** /* USER CODE BEGIN PD */
-  70:Src/freertos.c **** 
-  71:Src/freertos.c **** /* USER CODE END PD */
-  72:Src/freertos.c **** 
-  73:Src/freertos.c **** /* Private macro -------------------------------------------------------------*/
-  74:Src/freertos.c **** /* USER CODE BEGIN PM */
-  75:Src/freertos.c **** 
-  76:Src/freertos.c **** /* USER CODE END PM */
-  77:Src/freertos.c **** 
-  78:Src/freertos.c **** /* Private variables ---------------------------------------------------------*/
-  79:Src/freertos.c **** /* USER CODE BEGIN Variables */
-  80:Src/freertos.c **** 
-  81:Src/freertos.c **** /* USER CODE END Variables */
-  82:Src/freertos.c **** osThreadId defaultTaskHandle;
-  83:Src/freertos.c **** 
-  84:Src/freertos.c **** /* Private function prototypes -----------------------------------------------*/
-  85:Src/freertos.c **** /* USER CODE BEGIN FunctionPrototypes */
-  86:Src/freertos.c **** 
-  87:Src/freertos.c **** /* USER CODE END FunctionPrototypes */
+  57:Src/freertos.c **** #include "oi_driver.h"
+  58:Src/freertos.c **** 
+  59:Src/freertos.c **** /* Private includes ----------------------------------------------------------*/
+  60:Src/freertos.c **** /* USER CODE BEGIN Includes */
+  61:Src/freertos.c **** 
+  62:Src/freertos.c **** /* USER CODE END Includes */
+  63:Src/freertos.c **** 
+  64:Src/freertos.c **** /* Private typedef -----------------------------------------------------------*/
+  65:Src/freertos.c **** /* USER CODE BEGIN PTD */
+  66:Src/freertos.c **** 
+  67:Src/freertos.c **** /* USER CODE END PTD */
+  68:Src/freertos.c **** 
+  69:Src/freertos.c **** /* Private define ------------------------------------------------------------*/
+  70:Src/freertos.c **** /* USER CODE BEGIN PD */
+  71:Src/freertos.c **** 
+  72:Src/freertos.c **** /* USER CODE END PD */
+  73:Src/freertos.c **** 
+  74:Src/freertos.c **** /* Private macro -------------------------------------------------------------*/
+  75:Src/freertos.c **** /* USER CODE BEGIN PM */
+  76:Src/freertos.c **** 
+  77:Src/freertos.c **** /* USER CODE END PM */
+  78:Src/freertos.c **** 
+  79:Src/freertos.c **** /* Private variables ---------------------------------------------------------*/
+  80:Src/freertos.c **** /* USER CODE BEGIN Variables */
+  81:Src/freertos.c **** 
+  82:Src/freertos.c **** /* USER CODE END Variables */
+  83:Src/freertos.c **** osThreadId defaultTaskHandle;
+  84:Src/freertos.c **** 
+  85:Src/freertos.c **** /* Private function prototypes -----------------------------------------------*/
+  86:Src/freertos.c **** /* USER CODE BEGIN FunctionPrototypes */
+  87:Src/freertos.c **** 
   88:Src/freertos.c **** 
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s 			page 3
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s 			page 3
 
 
-  89:Src/freertos.c **** void StartDefaultTask(void const * argument);
-  90:Src/freertos.c **** void StartUAVCANTask(void const * argument);
-  91:Src/freertos.c **** 
-  92:Src/freertos.c **** void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
+  89:Src/freertos.c **** /* USER CODE END FunctionPrototypes */
+  90:Src/freertos.c **** 
+  91:Src/freertos.c **** void StartDefaultTask(void const * argument);
+  92:Src/freertos.c **** void StartUAVCANTask(void const * argument);
   93:Src/freertos.c **** 
-  94:Src/freertos.c **** /**
-  95:Src/freertos.c ****   * @brief  FreeRTOS initialization
-  96:Src/freertos.c ****   * @param  None
-  97:Src/freertos.c ****   * @retval None
-  98:Src/freertos.c ****   */
-  99:Src/freertos.c **** void MX_FREERTOS_Init(void) {
- 100:Src/freertos.c ****   /* USER CODE BEGIN Init */
- 101:Src/freertos.c **** 
- 102:Src/freertos.c ****   /* USER CODE END Init */
+  94:Src/freertos.c **** void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
+  95:Src/freertos.c **** 
+  96:Src/freertos.c **** /**
+  97:Src/freertos.c ****   * @brief  FreeRTOS initialization
+  98:Src/freertos.c ****   * @param  None
+  99:Src/freertos.c ****   * @retval None
+ 100:Src/freertos.c ****   */
+ 101:Src/freertos.c **** void MX_FREERTOS_Init(void) {
+ 102:Src/freertos.c ****   /* USER CODE BEGIN Init */
  103:Src/freertos.c **** 
- 104:Src/freertos.c ****   /* USER CODE BEGIN RTOS_MUTEX */
- 105:Src/freertos.c ****   /* add mutexes, ... */
- 106:Src/freertos.c ****   /* USER CODE END RTOS_MUTEX */
- 107:Src/freertos.c **** 
- 108:Src/freertos.c ****   /* USER CODE BEGIN RTOS_SEMAPHORES */
- 109:Src/freertos.c ****   /* add semaphores, ... */
- 110:Src/freertos.c ****   /* USER CODE END RTOS_SEMAPHORES */
- 111:Src/freertos.c **** 
- 112:Src/freertos.c ****   /* USER CODE BEGIN RTOS_TIMERS */
- 113:Src/freertos.c ****   /* start timers, add new ones, ... */
- 114:Src/freertos.c ****   /* USER CODE END RTOS_TIMERS */
- 115:Src/freertos.c **** 
- 116:Src/freertos.c ****   /* Create the thread(s) */
- 117:Src/freertos.c ****   /* definition and creation of defaultTask */
- 118:Src/freertos.c ****   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
- 119:Src/freertos.c ****   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
- 120:Src/freertos.c **** 
- 121:Src/freertos.c ****   /* USER CODE BEGIN RTOS_THREADS */
- 122:Src/freertos.c ****   osThreadDef(UAVCANTask, StartUAVCANTask, osPriorityHigh, 1, 300);  // define job1 as thread funct
- 123:Src/freertos.c ****   osThreadCreate(osThread(UAVCANTask),NULL);
- 124:Src/freertos.c ****   /* USER CODE END RTOS_THREADS */
- 125:Src/freertos.c **** 
- 126:Src/freertos.c ****   /* USER CODE BEGIN RTOS_QUEUES */
- 127:Src/freertos.c ****   /* add queues, ... */
- 128:Src/freertos.c ****   /* USER CODE END RTOS_QUEUES */
- 129:Src/freertos.c **** }
- 130:Src/freertos.c **** 
- 131:Src/freertos.c **** /* USER CODE BEGIN Header_StartDefaultTask */
- 132:Src/freertos.c **** /**
- 133:Src/freertos.c ****   * @brief  Function implementing the defaultTask thread.
- 134:Src/freertos.c ****   * @param  argument: Not used
- 135:Src/freertos.c ****   * @retval None
- 136:Src/freertos.c ****   */
- 137:Src/freertos.c **** /* USER CODE END Header_StartDefaultTask */
- 138:Src/freertos.c **** void StartDefaultTask(void const * argument)
- 139:Src/freertos.c **** {
-  28              		.loc 1 139 0
+ 104:Src/freertos.c ****   /* USER CODE END Init */
+ 105:Src/freertos.c **** 
+ 106:Src/freertos.c ****   /* USER CODE BEGIN RTOS_MUTEX */
+ 107:Src/freertos.c ****   /* add mutexes, ... */
+ 108:Src/freertos.c ****   /* USER CODE END RTOS_MUTEX */
+ 109:Src/freertos.c **** 
+ 110:Src/freertos.c ****   /* USER CODE BEGIN RTOS_SEMAPHORES */
+ 111:Src/freertos.c ****   /* add semaphores, ... */
+ 112:Src/freertos.c ****   /* USER CODE END RTOS_SEMAPHORES */
+ 113:Src/freertos.c **** 
+ 114:Src/freertos.c ****   /* USER CODE BEGIN RTOS_TIMERS */
+ 115:Src/freertos.c ****   /* start timers, add new ones, ... */
+ 116:Src/freertos.c ****   /* USER CODE END RTOS_TIMERS */
+ 117:Src/freertos.c **** 
+ 118:Src/freertos.c ****   /* Create the thread(s) */
+ 119:Src/freertos.c ****   /* definition and creation of defaultTask */
+ 120:Src/freertos.c ****   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
+ 121:Src/freertos.c ****   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+ 122:Src/freertos.c **** 
+ 123:Src/freertos.c ****   /* USER CODE BEGIN RTOS_THREADS */
+ 124:Src/freertos.c ****   osThreadDef(UAVCANTask, StartUAVCANTask, osPriorityHigh, 1, 1024);  // define job1 as thread func
+ 125:Src/freertos.c ****   osThreadCreate(osThread(UAVCANTask),NULL);
+ 126:Src/freertos.c ****   /* USER CODE END RTOS_THREADS */
+ 127:Src/freertos.c **** 
+ 128:Src/freertos.c ****   /* USER CODE BEGIN RTOS_QUEUES */
+ 129:Src/freertos.c ****   /* add queues, ... */
+ 130:Src/freertos.c ****   /* USER CODE END RTOS_QUEUES */
+ 131:Src/freertos.c **** }
+ 132:Src/freertos.c **** 
+ 133:Src/freertos.c **** /* USER CODE BEGIN Header_StartDefaultTask */
+ 134:Src/freertos.c **** /**
+ 135:Src/freertos.c ****   * @brief  Function implementing the defaultTask thread.
+ 136:Src/freertos.c ****   * @param  argument: Not used
+ 137:Src/freertos.c ****   * @retval None
+ 138:Src/freertos.c ****   */
+ 139:Src/freertos.c **** /* USER CODE END Header_StartDefaultTask */
+ 140:Src/freertos.c **** void StartDefaultTask(void const * argument)
+ 141:Src/freertos.c **** {
+  28              		.loc 1 141 0
   29              		.cfi_startproc
-  30              		@ Volatile: function does not return.
-  31              		@ args = 0, pretend = 0, frame = 0
-  32              		@ frame_needed = 0, uses_anonymous_args = 0
-  33              	.LVL0:
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s 			page 4
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s 			page 4
 
 
-  34 0000 08B5     		push	{r3, lr}
-  35              	.LCFI0:
-  36              		.cfi_def_cfa_offset 8
-  37              		.cfi_offset 3, -8
-  38              		.cfi_offset 14, -4
-  39              	.LVL1:
-  40              	.L2:
- 140:Src/freertos.c **** 
- 141:Src/freertos.c ****   /* USER CODE BEGIN StartDefaultTask */
- 142:Src/freertos.c ****   /* Infinite loop */
- 143:Src/freertos.c ****   for(;;)
- 144:Src/freertos.c ****   {
- 145:Src/freertos.c ****         osDelay(500);
-  41              		.loc 1 145 0 discriminator 1
-  42 0002 4FF4FA70 		mov	r0, #500
-  43 0006 FFF7FEFF 		bl	osDelay
-  44              	.LVL2:
-  45 000a FAE7     		b	.L2
-  46              		.cfi_endproc
-  47              	.LFE132:
-  49              		.section	.text.StartUAVCANTask,"ax",%progbits
-  50              		.align	1
-  51              		.global	StartUAVCANTask
-  52              		.syntax unified
-  53              		.thumb
-  54              		.thumb_func
-  55              		.fpu fpv4-sp-d16
-  57              	StartUAVCANTask:
-  58              	.LFB133:
- 146:Src/freertos.c ****   }
- 147:Src/freertos.c ****   /* USER CODE END StartDefaultTask */
- 148:Src/freertos.c **** }
- 149:Src/freertos.c **** 
- 150:Src/freertos.c **** /* Private application code --------------------------------------------------*/
- 151:Src/freertos.c **** /* USER CODE BEGIN Application */
- 152:Src/freertos.c **** void StartUAVCANTask(void const *argument)  {
-  59              		.loc 1 152 0
-  60              		.cfi_startproc
-  61              		@ Volatile: function does not return.
-  62              		@ args = 0, pretend = 0, frame = 0
-  63              		@ frame_needed = 0, uses_anonymous_args = 0
-  64              	.LVL3:
-  65 0000 08B5     		push	{r3, lr}
-  66              	.LCFI1:
-  67              		.cfi_def_cfa_offset 8
-  68              		.cfi_offset 3, -8
-  69              		.cfi_offset 14, -4
- 153:Src/freertos.c **** 
- 154:Src/freertos.c ****   //initialization of can and uavcan
- 155:Src/freertos.c ****   oi_uavcan_init();
-  70              		.loc 1 155 0
-  71 0002 FFF7FEFF 		bl	oi_uavcan_init
-  72              	.LVL4:
-  73              	.L5:
- 156:Src/freertos.c **** 
- 157:Src/freertos.c ****   while (1)  {
- 158:Src/freertos.c ****     HAL_GPIO_TogglePin(GPIOA, LED_Pin);
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s 			page 5
+  32              	.LVL0:
+  33 0000 38B5     		push	{r3, r4, r5, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 16
+  36              		.cfi_offset 3, -16
+  37              		.cfi_offset 4, -12
+  38              		.cfi_offset 5, -8
+  39              		.cfi_offset 14, -4
+  40              	.LVL1:
+  41              	.L2:
+ 142:Src/freertos.c ****   param_t* p = NULL;
+ 143:Src/freertos.c **** 
+ 144:Src/freertos.c ****   /* USER CODE BEGIN StartDefaultTask */
+ 145:Src/freertos.c ****   /* Infinite loop */
+ 146:Src/freertos.c ****   for(;;)
+ 147:Src/freertos.c ****   {
+ 148:Src/freertos.c ****         //get params and update the valve microcontroller
+ 149:Src/freertos.c ****         p = oi_uavcan_getParamByName("drivers");
+  42              		.loc 1 149 0 discriminator 1
+  43 0002 2948     		ldr	r0, .L4
+  44 0004 FFF7FEFF 		bl	oi_uavcan_getParamByName
+  45              	.LVL2:
+  46 0008 0446     		mov	r4, r0
+  47              	.LVL3:
+ 150:Src/freertos.c ****         oi_driver_set(GPIOB, In1_Pin, 0, p->val);
+  48              		.loc 1 150 0 discriminator 1
+  49 000a 284D     		ldr	r5, .L4+4
+  50 000c 8368     		ldr	r3, [r0, #8]
+  51 000e 0022     		movs	r2, #0
+  52 0010 4FF48041 		mov	r1, #16384
+  53 0014 2846     		mov	r0, r5
+  54              	.LVL4:
+  55 0016 FFF7FEFF 		bl	oi_driver_set
+  56              	.LVL5:
+ 151:Src/freertos.c ****         oi_driver_set(GPIOB, In2_Pin, 1, p->val);
+  57              		.loc 1 151 0 discriminator 1
+  58 001a A368     		ldr	r3, [r4, #8]
+  59 001c 0122     		movs	r2, #1
+  60 001e 4FF40041 		mov	r1, #32768
+  61 0022 2846     		mov	r0, r5
+  62 0024 FFF7FEFF 		bl	oi_driver_set
+  63              	.LVL6:
+ 152:Src/freertos.c ****         oi_driver_set(GPIOA, In3_Pin, 2, p->val);
+  64              		.loc 1 152 0 discriminator 1
+  65 0028 A368     		ldr	r3, [r4, #8]
+  66 002a 0222     		movs	r2, #2
+  67 002c 4FF48061 		mov	r1, #1024
+  68 0030 4FF09040 		mov	r0, #1207959552
+  69 0034 FFF7FEFF 		bl	oi_driver_set
+  70              	.LVL7:
+ 153:Src/freertos.c ****         oi_driver_set(GPIOA, In4_Pin, 3, p->val);
+  71              		.loc 1 153 0 discriminator 1
+  72 0038 A368     		ldr	r3, [r4, #8]
+  73 003a 0322     		movs	r2, #3
+  74 003c 4FF40071 		mov	r1, #512
+  75 0040 4FF09040 		mov	r0, #1207959552
+  76 0044 FFF7FEFF 		bl	oi_driver_set
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s 			page 5
 
 
-  74              		.loc 1 158 0 discriminator 1
-  75 0006 0121     		movs	r1, #1
-  76 0008 4FF09040 		mov	r0, #1207959552
-  77 000c FFF7FEFF 		bl	HAL_GPIO_TogglePin
-  78              	.LVL5:
- 159:Src/freertos.c **** 
- 160:Src/freertos.c ****     oi_uavcan_sendCanard();
-  79              		.loc 1 160 0 discriminator 1
-  80 0010 FFF7FEFF 		bl	oi_uavcan_sendCanard
-  81              	.LVL6:
- 161:Src/freertos.c ****     oi_uavcan_receiveCanard();
-  82              		.loc 1 161 0 discriminator 1
-  83 0014 FFF7FEFF 		bl	oi_uavcan_receiveCanard
-  84              	.LVL7:
- 162:Src/freertos.c ****     oi_uavcan_spinCanard(osKernelSysTick());
-  85              		.loc 1 162 0 discriminator 1
-  86 0018 FFF7FEFF 		bl	osKernelSysTick
-  87              	.LVL8:
-  88 001c FFF7FEFF 		bl	oi_uavcan_spinCanard
-  89              	.LVL9:
- 163:Src/freertos.c ****     osDelay (50);                                // delay execution for 10 milliseconds
-  90              		.loc 1 163 0 discriminator 1
-  91 0020 3220     		movs	r0, #50
-  92 0022 FFF7FEFF 		bl	osDelay
-  93              	.LVL10:
-  94 0026 EEE7     		b	.L5
-  95              		.cfi_endproc
-  96              	.LFE133:
-  98              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
-  99              		.align	1
- 100              		.global	MX_FREERTOS_Init
- 101              		.syntax unified
- 102              		.thumb
- 103              		.thumb_func
- 104              		.fpu fpv4-sp-d16
- 106              	MX_FREERTOS_Init:
- 107              	.LFB131:
-  99:Src/freertos.c ****   /* USER CODE BEGIN Init */
- 108              		.loc 1 99 0
- 109              		.cfi_startproc
- 110              		@ args = 0, pretend = 0, frame = 40
- 111              		@ frame_needed = 0, uses_anonymous_args = 0
- 112 0000 70B5     		push	{r4, r5, r6, lr}
- 113              	.LCFI2:
- 114              		.cfi_def_cfa_offset 16
- 115              		.cfi_offset 4, -16
- 116              		.cfi_offset 5, -12
- 117              		.cfi_offset 6, -8
- 118              		.cfi_offset 14, -4
- 119 0002 8AB0     		sub	sp, sp, #40
- 120              	.LCFI3:
- 121              		.cfi_def_cfa_offset 56
- 118:Src/freertos.c ****   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
- 122              		.loc 1 118 0
- 123 0004 0C4C     		ldr	r4, .L9
- 124 0006 05AD     		add	r5, sp, #20
- 125 0008 2646     		mov	r6, r4
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s 			page 6
+  77              	.LVL8:
+ 154:Src/freertos.c ****         oi_driver_set(GPIOA, In5_Pin, 4, p->val);
+  78              		.loc 1 154 0 discriminator 1
+  79 0048 A368     		ldr	r3, [r4, #8]
+  80 004a 0422     		movs	r2, #4
+  81 004c 4FF48071 		mov	r1, #256
+  82 0050 4FF09040 		mov	r0, #1207959552
+  83 0054 FFF7FEFF 		bl	oi_driver_set
+  84              	.LVL9:
+ 155:Src/freertos.c ****         oi_driver_set(GPIOA, In6_Pin, 5, p->val);
+  85              		.loc 1 155 0 discriminator 1
+  86 0058 A368     		ldr	r3, [r4, #8]
+  87 005a 0522     		movs	r2, #5
+  88 005c 4FF48051 		mov	r1, #4096
+  89 0060 4FF09040 		mov	r0, #1207959552
+  90 0064 FFF7FEFF 		bl	oi_driver_set
+  91              	.LVL10:
+ 156:Src/freertos.c ****         oi_driver_set(GPIOA, In7_Pin, 6, p->val);
+  92              		.loc 1 156 0 discriminator 1
+  93 0068 A368     		ldr	r3, [r4, #8]
+  94 006a 0622     		movs	r2, #6
+  95 006c 4FF40061 		mov	r1, #2048
+  96 0070 4FF09040 		mov	r0, #1207959552
+  97 0074 FFF7FEFF 		bl	oi_driver_set
+  98              	.LVL11:
+ 157:Src/freertos.c ****         oi_driver_set(GPIOC, In8_Pin, 7, p->val);
+  99              		.loc 1 157 0 discriminator 1
+ 100 0078 A368     		ldr	r3, [r4, #8]
+ 101 007a 0722     		movs	r2, #7
+ 102 007c 4FF40051 		mov	r1, #8192
+ 103 0080 0B48     		ldr	r0, .L4+8
+ 104 0082 FFF7FEFF 		bl	oi_driver_set
+ 105              	.LVL12:
+ 158:Src/freertos.c ****         oi_driver_set(GPIOB, In9_Pin, 8, p->val);
+ 106              		.loc 1 158 0 discriminator 1
+ 107 0086 A368     		ldr	r3, [r4, #8]
+ 108 0088 0822     		movs	r2, #8
+ 109 008a 0121     		movs	r1, #1
+ 110 008c 2846     		mov	r0, r5
+ 111 008e FFF7FEFF 		bl	oi_driver_set
+ 112              	.LVL13:
+ 159:Src/freertos.c ****         oi_driver_set(GPIOA, In10_Pin, 9, p->val);
+ 113              		.loc 1 159 0 discriminator 1
+ 114 0092 A368     		ldr	r3, [r4, #8]
+ 115 0094 0922     		movs	r2, #9
+ 116 0096 0821     		movs	r1, #8
+ 117 0098 4FF09040 		mov	r0, #1207959552
+ 118 009c FFF7FEFF 		bl	oi_driver_set
+ 119              	.LVL14:
+ 160:Src/freertos.c **** 
+ 161:Src/freertos.c **** 
+ 162:Src/freertos.c ****         osDelay(100);
+ 120              		.loc 1 162 0 discriminator 1
+ 121 00a0 6420     		movs	r0, #100
+ 122 00a2 FFF7FEFF 		bl	osDelay
+ 123              	.LVL15:
+ 124 00a6 ACE7     		b	.L2
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s 			page 6
 
 
- 126 000a 0FCE     		ldmia	r6!, {r0, r1, r2, r3}
- 127 000c 0FC5     		stmia	r5!, {r0, r1, r2, r3}
- 128 000e 3368     		ldr	r3, [r6]
- 129 0010 2B60     		str	r3, [r5]
- 119:Src/freertos.c **** 
- 130              		.loc 1 119 0
- 131 0012 0021     		movs	r1, #0
- 132 0014 05A8     		add	r0, sp, #20
- 133 0016 FFF7FEFF 		bl	osThreadCreate
- 134              	.LVL11:
- 135 001a 084B     		ldr	r3, .L9+4
- 136 001c 1860     		str	r0, [r3]
- 122:Src/freertos.c ****   osThreadCreate(osThread(UAVCANTask),NULL);
- 137              		.loc 1 122 0
- 138 001e 6D46     		mov	r5, sp
- 139 0020 1434     		adds	r4, r4, #20
- 140 0022 0FCC     		ldmia	r4!, {r0, r1, r2, r3}
- 141 0024 0FC5     		stmia	r5!, {r0, r1, r2, r3}
- 142 0026 2368     		ldr	r3, [r4]
- 143 0028 2B60     		str	r3, [r5]
- 123:Src/freertos.c ****   /* USER CODE END RTOS_THREADS */
- 144              		.loc 1 123 0
- 145 002a 0021     		movs	r1, #0
- 146 002c 6846     		mov	r0, sp
- 147 002e FFF7FEFF 		bl	osThreadCreate
- 148              	.LVL12:
- 129:Src/freertos.c **** 
- 149              		.loc 1 129 0
- 150 0032 0AB0     		add	sp, sp, #40
- 151              	.LCFI4:
- 152              		.cfi_def_cfa_offset 16
- 153              		@ sp needed
- 154 0034 70BD     		pop	{r4, r5, r6, pc}
- 155              	.L10:
- 156 0036 00BF     		.align	2
- 157              	.L9:
- 158 0038 00000000 		.word	.LANCHOR0
- 159 003c 00000000 		.word	defaultTaskHandle
- 160              		.cfi_endproc
- 161              	.LFE131:
- 163              		.comm	defaultTaskHandle,4,4
- 164              		.section	.rodata
- 165              		.align	2
- 166              		.set	.LANCHOR0,. + 0
- 167              	.LC4:
- 168 0000 0C000000 		.word	.LC0
- 169 0004 00000000 		.word	StartDefaultTask
- 170 0008 0000     		.short	0
- 171 000a 0000     		.space	2
- 172 000c 00000000 		.word	0
- 173 0010 80000000 		.word	128
- 174              	.LC5:
- 175 0014 00000000 		.word	.LC2
- 176 0018 00000000 		.word	StartUAVCANTask
- 177 001c 0200     		.short	2
- 178 001e 0000     		.space	2
- 179 0020 01000000 		.word	1
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s 			page 7
+ 125              	.L5:
+ 126              		.align	2
+ 127              	.L4:
+ 128 00a8 00000000 		.word	.LC4
+ 129 00ac 00040048 		.word	1207960576
+ 130 00b0 00080048 		.word	1207961600
+ 131              		.cfi_endproc
+ 132              	.LFE132:
+ 134              		.section	.text.StartUAVCANTask,"ax",%progbits
+ 135              		.align	1
+ 136              		.global	StartUAVCANTask
+ 137              		.syntax unified
+ 138              		.thumb
+ 139              		.thumb_func
+ 140              		.fpu fpv4-sp-d16
+ 142              	StartUAVCANTask:
+ 143              	.LFB133:
+ 163:Src/freertos.c ****   }
+ 164:Src/freertos.c ****   /* USER CODE END StartDefaultTask */
+ 165:Src/freertos.c **** }
+ 166:Src/freertos.c **** 
+ 167:Src/freertos.c **** /* Private application code --------------------------------------------------*/
+ 168:Src/freertos.c **** /* USER CODE BEGIN Application */
+ 169:Src/freertos.c **** void StartUAVCANTask(void const *argument)  {
+ 144              		.loc 1 169 0
+ 145              		.cfi_startproc
+ 146              		@ Volatile: function does not return.
+ 147              		@ args = 0, pretend = 0, frame = 0
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149              	.LVL16:
+ 150 0000 08B5     		push	{r3, lr}
+ 151              	.LCFI1:
+ 152              		.cfi_def_cfa_offset 8
+ 153              		.cfi_offset 3, -8
+ 154              		.cfi_offset 14, -4
+ 170:Src/freertos.c **** 
+ 171:Src/freertos.c ****   //initialization of can and uavcan
+ 172:Src/freertos.c ****   oi_uavcan_init();
+ 155              		.loc 1 172 0
+ 156 0002 FFF7FEFF 		bl	oi_uavcan_init
+ 157              	.LVL17:
+ 158              	.L7:
+ 173:Src/freertos.c **** 
+ 174:Src/freertos.c ****   while (1)  {
+ 175:Src/freertos.c ****     HAL_GPIO_TogglePin(GPIOA, LED_Pin);
+ 159              		.loc 1 175 0 discriminator 1
+ 160 0006 0121     		movs	r1, #1
+ 161 0008 4FF09040 		mov	r0, #1207959552
+ 162 000c FFF7FEFF 		bl	HAL_GPIO_TogglePin
+ 163              	.LVL18:
+ 176:Src/freertos.c **** 
+ 177:Src/freertos.c ****     oi_uavcan_sendCanard();
+ 164              		.loc 1 177 0 discriminator 1
+ 165 0010 FFF7FEFF 		bl	oi_uavcan_sendCanard
+ 166              	.LVL19:
+ 178:Src/freertos.c ****     oi_uavcan_receiveCanard();
+ 167              		.loc 1 178 0 discriminator 1
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s 			page 7
 
 
- 180 0024 2C010000 		.word	300
- 181              		.section	.rodata.str1.4,"aMS",%progbits,1
- 182              		.align	2
- 183              	.LC2:
- 184 0000 55415643 		.ascii	"UAVCANTask\000"
- 184      414E5461 
- 184      736B00
- 185 000b 00       		.space	1
- 186              	.LC0:
- 187 000c 64656661 		.ascii	"defaultTask\000"
- 187      756C7454 
- 187      61736B00 
- 188              		.text
- 189              	.Letext0:
- 190              		.file 2 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/arm-none-eabi/include/machine/_d
- 191              		.file 3 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/arm-none-eabi/include/sys/_stdin
- 192              		.file 4 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
- 193              		.file 5 "Inc/FreeRTOSConfig.h"
- 194              		.file 6 "Drivers/CMSIS/Include/core_cm4.h"
- 195              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 196              		.file 8 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h"
- 197              		.file 9 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/arm-none-eabi/include/sys/lock.h
- 198              		.file 10 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/arm-none-eabi/include/sys/_type
- 199              		.file 11 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/lib/gcc/arm-none-eabi/7.3.1/inc
- 200              		.file 12 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/arm-none-eabi/include/sys/reent
- 201              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
- 202              		.file 14 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
- 203              		.file 15 "Inc/oi_uavcan.h"
- 204              		.file 16 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s 			page 8
+ 168 0014 FFF7FEFF 		bl	oi_uavcan_receiveCanard
+ 169              	.LVL20:
+ 179:Src/freertos.c ****     oi_uavcan_spinCanard(osKernelSysTick());
+ 170              		.loc 1 179 0 discriminator 1
+ 171 0018 FFF7FEFF 		bl	osKernelSysTick
+ 172              	.LVL21:
+ 173 001c FFF7FEFF 		bl	oi_uavcan_spinCanard
+ 174              	.LVL22:
+ 180:Src/freertos.c ****     osDelay (50);                                // delay execution for 10 milliseconds
+ 175              		.loc 1 180 0 discriminator 1
+ 176 0020 3220     		movs	r0, #50
+ 177 0022 FFF7FEFF 		bl	osDelay
+ 178              	.LVL23:
+ 179 0026 EEE7     		b	.L7
+ 180              		.cfi_endproc
+ 181              	.LFE133:
+ 183              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
+ 184              		.align	1
+ 185              		.global	MX_FREERTOS_Init
+ 186              		.syntax unified
+ 187              		.thumb
+ 188              		.thumb_func
+ 189              		.fpu fpv4-sp-d16
+ 191              	MX_FREERTOS_Init:
+ 192              	.LFB131:
+ 101:Src/freertos.c ****   /* USER CODE BEGIN Init */
+ 193              		.loc 1 101 0
+ 194              		.cfi_startproc
+ 195              		@ args = 0, pretend = 0, frame = 40
+ 196              		@ frame_needed = 0, uses_anonymous_args = 0
+ 197 0000 70B5     		push	{r4, r5, r6, lr}
+ 198              	.LCFI2:
+ 199              		.cfi_def_cfa_offset 16
+ 200              		.cfi_offset 4, -16
+ 201              		.cfi_offset 5, -12
+ 202              		.cfi_offset 6, -8
+ 203              		.cfi_offset 14, -4
+ 204 0002 8AB0     		sub	sp, sp, #40
+ 205              	.LCFI3:
+ 206              		.cfi_def_cfa_offset 56
+ 120:Src/freertos.c ****   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+ 207              		.loc 1 120 0
+ 208 0004 0C4C     		ldr	r4, .L11
+ 209 0006 05AD     		add	r5, sp, #20
+ 210 0008 2646     		mov	r6, r4
+ 211 000a 0FCE     		ldmia	r6!, {r0, r1, r2, r3}
+ 212 000c 0FC5     		stmia	r5!, {r0, r1, r2, r3}
+ 213 000e 3368     		ldr	r3, [r6]
+ 214 0010 2B60     		str	r3, [r5]
+ 121:Src/freertos.c **** 
+ 215              		.loc 1 121 0
+ 216 0012 0021     		movs	r1, #0
+ 217 0014 05A8     		add	r0, sp, #20
+ 218 0016 FFF7FEFF 		bl	osThreadCreate
+ 219              	.LVL24:
+ 220 001a 084B     		ldr	r3, .L11+4
+ 221 001c 1860     		str	r0, [r3]
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s 			page 8
+
+
+ 124:Src/freertos.c ****   osThreadCreate(osThread(UAVCANTask),NULL);
+ 222              		.loc 1 124 0
+ 223 001e 6D46     		mov	r5, sp
+ 224 0020 1434     		adds	r4, r4, #20
+ 225 0022 0FCC     		ldmia	r4!, {r0, r1, r2, r3}
+ 226 0024 0FC5     		stmia	r5!, {r0, r1, r2, r3}
+ 227 0026 2368     		ldr	r3, [r4]
+ 228 0028 2B60     		str	r3, [r5]
+ 125:Src/freertos.c ****   /* USER CODE END RTOS_THREADS */
+ 229              		.loc 1 125 0
+ 230 002a 0021     		movs	r1, #0
+ 231 002c 6846     		mov	r0, sp
+ 232 002e FFF7FEFF 		bl	osThreadCreate
+ 233              	.LVL25:
+ 131:Src/freertos.c **** 
+ 234              		.loc 1 131 0
+ 235 0032 0AB0     		add	sp, sp, #40
+ 236              	.LCFI4:
+ 237              		.cfi_def_cfa_offset 16
+ 238              		@ sp needed
+ 239 0034 70BD     		pop	{r4, r5, r6, pc}
+ 240              	.L12:
+ 241 0036 00BF     		.align	2
+ 242              	.L11:
+ 243 0038 00000000 		.word	.LANCHOR0
+ 244 003c 00000000 		.word	defaultTaskHandle
+ 245              		.cfi_endproc
+ 246              	.LFE131:
+ 248              		.comm	defaultTaskHandle,4,4
+ 249              		.section	.rodata
+ 250              		.align	2
+ 251              		.set	.LANCHOR0,. + 0
+ 252              	.LC5:
+ 253 0000 0C000000 		.word	.LC0
+ 254 0004 00000000 		.word	StartDefaultTask
+ 255 0008 0000     		.short	0
+ 256 000a 0000     		.space	2
+ 257 000c 00000000 		.word	0
+ 258 0010 80000000 		.word	128
+ 259              	.LC6:
+ 260 0014 00000000 		.word	.LC2
+ 261 0018 00000000 		.word	StartUAVCANTask
+ 262 001c 0200     		.short	2
+ 263 001e 0000     		.space	2
+ 264 0020 01000000 		.word	1
+ 265 0024 00040000 		.word	1024
+ 266              		.section	.rodata.StartDefaultTask.str1.4,"aMS",%progbits,1
+ 267              		.align	2
+ 268              	.LC4:
+ 269 0000 64726976 		.ascii	"drivers\000"
+ 269      65727300 
+ 270              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 271              		.align	2
+ 272              	.LC2:
+ 273 0000 55415643 		.ascii	"UAVCANTask\000"
+ 273      414E5461 
+ 273      736B00
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s 			page 9
+
+
+ 274 000b 00       		.space	1
+ 275              	.LC0:
+ 276 000c 64656661 		.ascii	"defaultTask\000"
+ 276      756C7454 
+ 276      61736B00 
+ 277              		.text
+ 278              	.Letext0:
+ 279              		.file 2 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/arm-none-eabi/include/machine/_d
+ 280              		.file 3 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/arm-none-eabi/include/sys/_stdin
+ 281              		.file 4 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
+ 282              		.file 5 "Inc/FreeRTOSConfig.h"
+ 283              		.file 6 "Drivers/CMSIS/Include/core_cm4.h"
+ 284              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 285              		.file 8 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h"
+ 286              		.file 9 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/arm-none-eabi/include/sys/lock.h
+ 287              		.file 10 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/arm-none-eabi/include/sys/_type
+ 288              		.file 11 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/lib/gcc/arm-none-eabi/7.3.1/inc
+ 289              		.file 12 "/usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/arm-none-eabi/include/sys/reent
+ 290              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
+ 291              		.file 14 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
+ 292              		.file 15 "Inc/oi_uavcan.h"
+ 293              		.file 16 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 294              		.file 17 "Inc/oi_driver.h"
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 freertos.c
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s:18     .text.StartDefaultTask:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s:25     .text.StartDefaultTask:0000000000000000 StartDefaultTask
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s:50     .text.StartUAVCANTask:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s:57     .text.StartUAVCANTask:0000000000000000 StartUAVCANTask
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s:99     .text.MX_FREERTOS_Init:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s:106    .text.MX_FREERTOS_Init:0000000000000000 MX_FREERTOS_Init
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s:158    .text.MX_FREERTOS_Init:0000000000000038 $d
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s:18     .text.StartDefaultTask:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s:25     .text.StartDefaultTask:0000000000000000 StartDefaultTask
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s:128    .text.StartDefaultTask:00000000000000a8 $d
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s:135    .text.StartUAVCANTask:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s:142    .text.StartUAVCANTask:0000000000000000 StartUAVCANTask
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s:184    .text.MX_FREERTOS_Init:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s:191    .text.MX_FREERTOS_Init:0000000000000000 MX_FREERTOS_Init
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s:243    .text.MX_FREERTOS_Init:0000000000000038 $d
                             *COM*:0000000000000004 defaultTaskHandle
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s:165    .rodata:0000000000000000 $d
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccfea6IC.s:182    .rodata.str1.4:0000000000000000 $d
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s:250    .rodata:0000000000000000 $d
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s:267    .rodata.StartDefaultTask.str1.4:0000000000000000 $d
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cchFSMpU.s:271    .rodata.str1.4:0000000000000000 $d
 
 UNDEFINED SYMBOLS
+oi_uavcan_getParamByName
+oi_driver_set
 osDelay
 oi_uavcan_init
 HAL_GPIO_TogglePin

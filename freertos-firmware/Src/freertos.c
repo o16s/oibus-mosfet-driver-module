@@ -54,6 +54,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "oi_uavcan.h"
+#include "oi_driver.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -83,6 +84,7 @@ osThreadId defaultTaskHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
+
 
 /* USER CODE END FunctionPrototypes */
 
@@ -119,7 +121,7 @@ void MX_FREERTOS_Init(void) {
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  osThreadDef(UAVCANTask, StartUAVCANTask, osPriorityHigh, 1, 300);  // define job1 as thread function
+  osThreadDef(UAVCANTask, StartUAVCANTask, osPriorityHigh, 1, 1024);  // define job1 as thread function
   osThreadCreate(osThread(UAVCANTask),NULL);
   /* USER CODE END RTOS_THREADS */
 
@@ -137,12 +139,27 @@ void MX_FREERTOS_Init(void) {
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void const * argument)
 {
+  param_t* p = NULL;
 
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
   for(;;)
   {
-        osDelay(500);
+        //get params and update the valve microcontroller
+        p = oi_uavcan_getParamByName("drivers");
+        oi_driver_set(GPIOB, In1_Pin, 0, p->val);
+        oi_driver_set(GPIOB, In2_Pin, 1, p->val);
+        oi_driver_set(GPIOA, In3_Pin, 2, p->val);
+        oi_driver_set(GPIOA, In4_Pin, 3, p->val);
+        oi_driver_set(GPIOA, In5_Pin, 4, p->val);
+        oi_driver_set(GPIOA, In6_Pin, 5, p->val);
+        oi_driver_set(GPIOA, In7_Pin, 6, p->val);
+        oi_driver_set(GPIOC, In8_Pin, 7, p->val);
+        oi_driver_set(GPIOB, In9_Pin, 8, p->val);
+        oi_driver_set(GPIOA, In10_Pin, 9, p->val);
+
+
+        osDelay(100);
   }
   /* USER CODE END StartDefaultTask */
 }

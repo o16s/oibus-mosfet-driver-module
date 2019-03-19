@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****              (+++) Enable the CAN IRQ handler using HAL_NVIC_EnableIRQ()
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****              (+++) In CAN IRQ handler, call HAL_CAN_IRQHandler()
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 2
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 2
 
 
   32:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       (#) Initialize the CAN peripheral using HAL_CAN_Init() function. This
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****           available user callbacks: HAL_CAN_xxxCallback(), using same APIs
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****           HAL_CAN_GetRxMessage() and HAL_CAN_AddTxMessage().
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 3
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 3
 
 
   89:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       (#) Notifications can be deactivated using
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   *      may be used to endorse or promote products derived from this software
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   *      without specific prior written permission.
  145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   *
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 4
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 4
 
 
  146:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  200:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****  *
  201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** @verbatim
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   ==============================================================================
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 5
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 5
 
 
  203:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****               ##### Initialization and de-initialization functions #####
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  257:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
  258:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   /* Check Sleep mode leave acknowledge */
  259:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   while ((hcan->Instance->MSR & CAN_MSR_SLAK) != 0U)
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 6
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 6
 
 
  260:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   {
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  314:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   /* Set the automatic wake-up mode */
  315:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   if (hcan->Init.AutoWakeUp == ENABLE)
  316:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   {
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 7
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 7
 
 
  317:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     SET_BIT(hcan->Instance->MCR, CAN_MCR_AWUM);
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  371:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** /**
  372:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   * @brief  Deinitializes the CAN peripheral registers to their default
  373:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   *         reset values.
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 8
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 8
 
 
  374:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   * @param  hcan pointer to a CAN_HandleTypeDef structure that contains
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  422:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** }
   34              		.loc 1 422 0
   35 0000 7047     		bx	lr
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 9
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 9
 
 
   36              		.cfi_endproc
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
   85 0024 12F0020F 		tst	r2, #2
   86 0028 10D0     		beq	.L27
  261:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     {
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 10
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 10
 
 
   87              		.loc 1 261 0
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  132 006a 0A28     		cmp	r0, #10
  133 006c F5D9     		bls	.L7
  285:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 11
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 11
 
 
  134              		.loc 1 285 0
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  178              		.loc 1 331 0
  179 00b4 2268     		ldr	r2, [r4]
  180 00b6 1368     		ldr	r3, [r2]
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 12
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 12
 
 
  181 00b8 43F01003 		orr	r3, r3, #16
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  226              		.loc 1 297 0
  227 0102 1A68     		ldr	r2, [r3]
  228 0104 42F08002 		orr	r2, r2, #128
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 13
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 13
 
 
  229 0108 1A60     		str	r2, [r3]
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  369:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
  277              		.loc 1 369 0
  278 014a 7047     		bx	lr
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 14
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 14
 
 
  279              		.cfi_endproc
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  447:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****  *
  448:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** @verbatim
  449:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   ==============================================================================
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 15
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 15
 
 
  450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****               ##### Configuration functions #####
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  486:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
  487:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     /* CAN is single instance with 14 dedicated filters banks */
  488:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 16
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 16
 
 
  489:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     /* Check the parameters */
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  543:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     {
  544:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       /* Identifier list mode for the filter*/
  545:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       SET_BIT(can_ip->FM1R, filternbrbitpos);
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 17
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 17
 
 
  546:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     }
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  493:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
  350              		.loc 1 493 0
  351 001c D3F80022 		ldr	r2, [r3, #512]
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 18
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 18
 
 
  352 0020 42F00102 		orr	r2, r2, #1
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  392              		.loc 1 515 0
  393 0068 4834     		adds	r4, r4, #72
  394 006a 03EBC404 		add	r4, r3, r4, lsl #3
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 19
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 19
 
 
  395 006e 6560     		str	r5, [r4, #4]
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  441              	.L51:
  442              	.LCFI4:
  443              		.cfi_restore_state
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 20
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 20
 
 
  523:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  485              	.L52:
  563:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     }
  486              		.loc 1 563 0
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 21
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 21
 
 
  487 00f0 D3F81C12 		ldr	r1, [r3, #540]
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  618:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** HAL_StatusTypeDef HAL_CAN_Start(CAN_HandleTypeDef *hcan)
  619:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** {
  505              		.loc 1 619 0
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 22
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 22
 
 
  506              		.cfi_startproc
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  658:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     hcan->ErrorCode |= HAL_CAN_ERROR_NOT_READY;
  522              		.loc 1 658 0
  523 000c 436A     		ldr	r3, [r0, #36]
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 23
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 23
 
 
  524 000e 43F40023 		orr	r3, r3, #524288
@@ -1378,7 +1378,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  645:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       }
  567              		.loc 1 645 0
  568 0052 0120     		movs	r0, #1
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 24
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 24
 
 
  569 0054 DFE7     		b	.L56
@@ -1438,7 +1438,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  680:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     tickstart = HAL_GetTick();
  681:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
  682:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     /* Wait the acknowledge */
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 25
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 25
 
 
  683:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     while ((hcan->Instance->MSR & CAN_MSR_INAK) == 0U)
@@ -1498,7 +1498,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  626              	.LVL38:
  627 0028 0546     		mov	r5, r0
  628              	.LVL39:
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 26
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 26
 
 
  629              	.L63:
@@ -1558,7 +1558,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  676              		.cfi_startproc
  677              		@ args = 0, pretend = 0, frame = 0
  678              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 27
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 27
 
 
  679              	.LVL41:
@@ -1618,7 +1618,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  724              		.global	HAL_CAN_RequestSleep
  725              		.syntax unified
  726              		.thumb
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 28
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 28
 
 
  727              		.thumb_func
@@ -1678,7 +1678,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  752 0014 0120     		movs	r0, #1
  753              	.LVL49:
  745:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   }
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 29
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 29
 
 
  746:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** }
@@ -1738,7 +1738,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  793              		.loc 1 760 0
  794 0006 90F82030 		ldrb	r3, [r0, #32]	@ zero_extendqisi2
  795              	.LVL54:
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 30
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 30
 
 
  761:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
@@ -1798,7 +1798,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  815              		@ sp needed
  816 001e 7047     		bx	lr
  817              	.LVL57:
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 31
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 31
 
 
  818              	.L86:
@@ -1858,7 +1858,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  866              		.thumb
  867              		.thumb_func
  868              		.fpu fpv4-sp-d16
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 32
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 32
 
 
  870              	HAL_CAN_IsSleepActive:
@@ -1918,7 +1918,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  818:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   }
  819:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
  820:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   /* Return function status */
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 33
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 33
 
 
  821:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   return status;
@@ -1978,7 +1978,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  840:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   uint32_t tsr = READ_REG(hcan->Instance->TSR);
  937              		.loc 1 840 0
  938 0006 0568     		ldr	r5, [r0]
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 34
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 34
 
 
  939 0008 AD68     		ldr	r5, [r5, #8]
@@ -2038,7 +2038,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  887:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****         hcan->Instance->sTxMailBox[transmitmailbox].TIR = ((pHeader->ExtId << CAN_TI0R_EXID_Pos) |
  888:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****                                                            pHeader->IDE |
  889:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****                                                            pHeader->RTR);
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 35
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 35
 
 
  890:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       }
@@ -2098,7 +2098,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  956              		.loc 1 934 0
  957 001c 70BC     		pop	{r4, r5, r6}
  958              	.LCFI13:
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 36
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 36
 
 
  959              		.cfi_remember_state
@@ -2158,7 +2158,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  896:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       {
  1004              		.loc 1 896 0
  1005 005a 0B7D     		ldrb	r3, [r1, #20]	@ zero_extendqisi2
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 37
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 37
 
 
  1006 005c 012B     		cmp	r3, #1
@@ -2218,7 +2218,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  873:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       }
  1055              		.loc 1 873 0
  1056 00b4 0120     		movs	r0, #1
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 38
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 38
 
 
  1057              	.LVL84:
@@ -2278,7 +2278,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1104              		.fpu fpv4-sp-d16
  1106              	HAL_CAN_AbortTxRequest:
  1107              	.LFB137:
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 39
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 39
 
 
  935:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
@@ -2338,7 +2338,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  974:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
  975:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     /* Return function status */
  976:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     return HAL_OK;
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 40
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 40
 
 
  977:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   }
@@ -2398,7 +2398,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1163              	.LVL96:
  1164              	.L113:
  1165 004c 0020     		movs	r0, #0
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 41
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 41
 
 
  1166              	.LVL97:
@@ -2458,7 +2458,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1004:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       freelevel++;
 1005:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     }
 1006:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 42
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 42
 
 
 1007:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     /* Check Tx Mailbox 1 status */
@@ -2518,7 +2518,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1232              		.loc 1 1004 0
  1233 0032 0120     		movs	r0, #1
  1234              	.LVL107:
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 43
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 43
 
 
  1235 0034 F2E7     		b	.L117
@@ -2578,7 +2578,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1268              	.LVL112:
  1269              	.L126:
 1045:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       (state == HAL_CAN_STATE_LISTENING))
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 44
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 44
 
 
 1046:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   {
@@ -2638,7 +2638,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1301              		.loc 1 1069 0
  1302              		.cfi_startproc
  1303              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 45
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 45
 
 
  1304              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2698,7 +2698,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
   12:Drivers/CMSIS/Include/cmsis_gcc.h ****    - Redistributions of source code must retain the above copyright
   13:Drivers/CMSIS/Include/cmsis_gcc.h ****      notice, this list of conditions and the following disclaimer.
   14:Drivers/CMSIS/Include/cmsis_gcc.h ****    - Redistributions in binary form must reproduce the above copyright
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 46
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 46
 
 
   15:Drivers/CMSIS/Include/cmsis_gcc.h ****      notice, this list of conditions and the following disclaimer in the
@@ -2758,7 +2758,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
   69:Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
   70:Drivers/CMSIS/Include/cmsis_gcc.h **** {
   71:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsid i" : : : "memory");
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 47
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 47
 
 
   72:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -2818,7 +2818,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  126:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  127:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  128:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 48
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 48
 
 
  129:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get xPSR Register
@@ -2878,7 +2878,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  183:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer
  184:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Main Stack Pointer (MSP).
  185:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 49
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 49
 
 
  186:Drivers/CMSIS/Include/cmsis_gcc.h ****     \param [in]    topOfMainStack  Main Stack Pointer value to set
@@ -2938,7 +2938,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  240:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  241:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  242:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 50
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 50
 
 
  243:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -2998,7 +2998,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  297:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    faultMask  Fault Mask value to set
  298:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  299:Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_FAULTMASK(uint32_t faultMask)
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 51
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 51
 
 
  300:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -3058,7 +3058,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  354:Drivers/CMSIS/Include/cmsis_gcc.h ****   Access to dedicated instructions
  355:Drivers/CMSIS/Include/cmsis_gcc.h ****   @{
  356:Drivers/CMSIS/Include/cmsis_gcc.h **** */
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 52
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 52
 
 
  357:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -3118,7 +3118,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  411:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Instruction Synchronization Barrier
  412:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Instruction Synchronization Barrier flushes the pipeline in the processor,
  413:Drivers/CMSIS/Include/cmsis_gcc.h ****            so that all instructions following the ISB are fetched from cache or memory,
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 53
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 53
 
 
  414:Drivers/CMSIS/Include/cmsis_gcc.h ****            after the instruction has been completed.
@@ -3178,7 +3178,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  468:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  469:Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE uint32_t __REV16(uint32_t value)
  470:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 54
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 54
 
 
  471:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
@@ -3238,7 +3238,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  525:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  526:Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE uint32_t __RBIT(uint32_t value)
  527:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 55
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 55
 
 
  528:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
@@ -3298,7 +3298,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1103:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** {
  1363              		.loc 1 1103 0
  1364              		.cfi_startproc
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 56
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 56
 
 
  1365              		@ args = 0, pretend = 0, frame = 0
@@ -3358,7 +3358,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1140:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     }
 1141:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     else
 1142:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     {
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 57
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 57
 
 
 1143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       pHeader->ExtId = ((CAN_RI0R_EXID | CAN_RI0R_STID) & hcan->Instance->sFIFOMailBox[RxFifo].RIR)
@@ -3418,7 +3418,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1397              		.cfi_restore 4
  1398              		.cfi_def_cfa_offset 0
  1399 001a 7047     		bx	lr
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 58
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 58
 
 
  1400              	.LVL133:
@@ -3478,7 +3478,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1446 006a 2544     		add	r5, r5, r4
  1447 006c 6D68     		ldr	r5, [r5, #4]
  1448 006e C5F30725 		ubfx	r5, r5, #8, #8
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 59
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 59
 
 
  1449 0072 9561     		str	r5, [r2, #24]
@@ -3538,7 +3538,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1495 00ce D4F8BC41 		ldr	r4, [r4, #444]
  1496 00d2 C4F30744 		ubfx	r4, r4, #16, #8
  1497 00d6 9C71     		strb	r4, [r3, #6]
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 60
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 60
 
 
 1158:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
@@ -3598,7 +3598,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1543              	.LVL143:
  1544              	.L137:
 1143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     }
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 61
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 61
 
 
  1545              		.loc 1 1143 0
@@ -3658,7 +3658,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1586              	.LVL148:
 1196:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
 1197:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   /* Check function parameters */
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 62
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 62
 
 
 1198:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   assert_param(IS_CAN_RX_FIFO(RxFifo));
@@ -3718,7 +3718,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1619              	.LFE142:
  1621              		.section	.text.HAL_CAN_ActivateNotification,"ax",%progbits
  1622              		.align	1
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 63
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 63
 
 
  1623              		.global	HAL_CAN_ActivateNotification
@@ -3778,7 +3778,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1641 0004 013B     		subs	r3, r3, #1
  1642              	.LVL159:
  1643 0006 DBB2     		uxtb	r3, r3
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 64
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 64
 
 
  1644 0008 012B     		cmp	r3, #1
@@ -3838,7 +3838,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1271:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   * @brief  Disable interrupts.
 1272:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   * @param  hcan pointer to an CAN_HandleTypeDef structure that contains
 1273:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   *         the configuration information for the specified CAN.
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 65
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 65
 
 
 1274:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   * @param  InactiveITs indicates which interrupts will be disabled.
@@ -3898,7 +3898,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1289:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
  1706              		.loc 1 1289 0
  1707 0018 0268     		ldr	r2, [r0]
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 66
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 66
 
 
  1708 001a 5369     		ldr	r3, [r2, #20]
@@ -3958,7 +3958,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1336:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****         if ((tsrflags & CAN_TSR_ALST0) != 0U)
 1337:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****         {
 1338:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****           /* Update error code */
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 67
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 67
 
 
 1339:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****           errorcode |= HAL_CAN_ERROR_TX_ALST0;
@@ -4018,7 +4018,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1393:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
 1394:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       if ((tsrflags & CAN_TSR_TXOK2) != 0U)
 1395:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       {
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 68
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 68
 
 
 1396:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****         /* Transmission Mailbox 2 complete callback */
@@ -4078,7 +4078,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   if ((interrupts & CAN_IT_RX_FIFO0_MSG_PENDING) != 0U)
 1451:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   {
 1452:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     /* Check if message is still pending */
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 69
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 69
 
 
 1453:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     if ((hcan->Instance->RF0R & CAN_RF0R_FMP0) != 0U)
@@ -4138,7 +4138,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1507:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
 1508:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       /* Sleep Callback */
 1509:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       /* Call weak (surcharged) callback */
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 70
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 70
 
 
 1510:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       HAL_CAN_SleepCallback(hcan);
@@ -4198,7 +4198,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1564:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       if (((interrupts & CAN_IT_LAST_ERROR_CODE) != 0U) &&
 1565:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****           ((esrflags & CAN_ESR_LEC) != 0U))
 1566:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       {
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 71
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 71
 
 
 1567:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****         switch (esrflags & CAN_ESR_LEC)
@@ -4258,7 +4258,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1621:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
 1622:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** /** @defgroup CAN_Exported_Functions_Group5 Callback functions
 1623:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****  *  @brief   CAN Callback functions
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 72
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 72
 
 
 1624:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****  *
@@ -4318,7 +4318,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1743              		.syntax unified
  1744              		.thumb
  1745              		.thumb_func
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 73
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 73
 
 
  1746              		.fpu fpv4-sp-d16
@@ -4378,7 +4378,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1691:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   /* Prevent unused argument(s) compilation warning */
 1692:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   UNUSED(hcan);
 1693:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 74
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 74
 
 
 1694:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   /* NOTE : This function Should not be modified, when the callback is needed,
@@ -4438,7 +4438,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1716:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
 1717:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** /**
 1718:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   * @brief  Transmission Mailbox 1 Cancellation callback.
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 75
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 75
 
 
 1719:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   * @param  hcan pointer to an CAN_HandleTypeDef structure that contains
@@ -4498,7 +4498,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1748:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****    */
 1749:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** }
  1840              		.loc 1 1749 0
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 76
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 76
 
 
  1841 0000 7047     		bx	lr
@@ -4558,7 +4558,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1773:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   */
 1774:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** __weak void HAL_CAN_RxFifo0FullCallback(CAN_HandleTypeDef *hcan)
 1775:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** {
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 77
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 77
 
 
  1876              		.loc 1 1775 0
@@ -4618,7 +4618,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1908              		.section	.text.HAL_CAN_RxFifo1FullCallback,"ax",%progbits
  1909              		.align	1
  1910              		.weak	HAL_CAN_RxFifo1FullCallback
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 78
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 78
 
 
  1911              		.syntax unified
@@ -4678,7 +4678,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1942              		@ frame_needed = 0, uses_anonymous_args = 0
  1943              		@ link register save eliminated.
  1944              	.LVL181:
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 79
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 79
 
 
 1827:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   /* Prevent unused argument(s) compilation warning */
@@ -4738,7 +4738,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  1979              	HAL_CAN_ErrorCallback:
  1980              	.LFB158:
 1851:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 80
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 80
 
 
 1852:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** /**
@@ -4798,7 +4798,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  2021              	.LVL185:
 1312:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   uint32_t msrflags = READ_REG(hcan->Instance->MSR);
  2022              		.loc 1 1312 0
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 81
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 81
 
 
  2023 0006 0368     		ldr	r3, [r0]
@@ -4858,7 +4858,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  2064 0042 FFF7FEFF 		bl	HAL_CAN_TxMailbox0CompleteCallback
  2065              	.LVL192:
 1311:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   uint32_t interrupts = READ_REG(hcan->Instance->IER);
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 82
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 82
 
 
  2066              		.loc 1 1311 0
@@ -4918,7 +4918,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  2109              		.loc 1 1402 0
  2110 008c 16F4802F 		tst	r6, #262144
  2111 0090 17D0     		beq	.L179
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 83
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 83
 
 
 1405:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****         }
@@ -4978,7 +4978,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1416:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****         }
  2157              		.loc 1 1416 0
  2158 00ce 2846     		mov	r0, r5
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 84
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 84
 
 
  2159 00d0 FFF7FEFF 		bl	HAL_CAN_TxMailbox2AbortCallback
@@ -5038,7 +5038,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  2202 0112 18F0100F 		tst	r8, #16
  2203 0116 04D0     		beq	.L184
 1467:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** 
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 85
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 85
 
 
  2204              		.loc 1 1467 0
@@ -5098,7 +5098,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  2247 0160 61D0     		beq	.L190
 1534:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****           ((esrflags & CAN_ESR_EWGF) != 0U))
  2248              		.loc 1 1534 0
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 86
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 86
 
 
  2249 0162 14F4807F 		tst	r4, #256
@@ -5158,7 +5158,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  2292 01b0 47D0     		beq	.L200
  2293 01b2 BAF1400F 		cmp	r10, #64
  2294 01b6 31D1     		bne	.L194
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 87
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 87
 
 
 1583:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****             break;
@@ -5218,7 +5218,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  2339 01f0 2846     		mov	r0, r5
  2340 01f2 FFF7FEFF 		bl	HAL_CAN_SleepCallback
  2341              	.LVL221:
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 88
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 88
 
 
  2342 01f6 A8E7     		b	.L187
@@ -5278,7 +5278,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  2386 0232 BDE8F88F 		pop	{r3, r4, r5, r6, r7, r8, r9, r10, fp, pc}
  2387              	.LVL226:
  2388              	.L195:
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 89
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 89
 
 
 1579:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****             break;
@@ -5338,7 +5338,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1873:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****  *  @brief   CAN Peripheral State functions
 1874:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****  *
 1875:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** @verbatim
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 90
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 90
 
 
 1876:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   ==============================================================================
@@ -5398,7 +5398,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1913:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     }
 1914:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     else
 1915:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     {
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 91
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 91
 
 
 1916:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****       /* Neither sleep mode request nor sleep mode acknowledge */
@@ -5458,7 +5458,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1930:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** uint32_t HAL_CAN_GetError(CAN_HandleTypeDef *hcan)
 1931:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c **** {
  2485              		.loc 1 1931 0
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 92
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 92
 
 
  2486              		.cfi_startproc
@@ -5518,7 +5518,7 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
 1950:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     /* Reset CAN error code */
 1951:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****     hcan->ErrorCode = 0U;
 1952:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   }
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 93
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 93
 
 
 1953:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c ****   else
@@ -5570,87 +5570,87 @@ ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 1
  2558              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
  2559              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_can.h"
  2560              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 94
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 94
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_can.c
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:18     .text.HAL_CAN_MspInit:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:25     .text.HAL_CAN_MspInit:0000000000000000 HAL_CAN_MspInit
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:40     .text.HAL_CAN_Init:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:47     .text.HAL_CAN_Init:0000000000000000 HAL_CAN_Init
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:283    .text.HAL_CAN_MspDeInit:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:290    .text.HAL_CAN_MspDeInit:0000000000000000 HAL_CAN_MspDeInit
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:304    .text.HAL_CAN_ConfigFilter:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:311    .text.HAL_CAN_ConfigFilter:0000000000000000 HAL_CAN_ConfigFilter
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:496    .text.HAL_CAN_Start:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:503    .text.HAL_CAN_Start:0000000000000000 HAL_CAN_Start
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:580    .text.HAL_CAN_Stop:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:587    .text.HAL_CAN_Stop:0000000000000000 HAL_CAN_Stop
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:666    .text.HAL_CAN_DeInit:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:673    .text.HAL_CAN_DeInit:0000000000000000 HAL_CAN_DeInit
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:723    .text.HAL_CAN_RequestSleep:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:730    .text.HAL_CAN_RequestSleep:0000000000000000 HAL_CAN_RequestSleep
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:771    .text.HAL_CAN_WakeUp:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:778    .text.HAL_CAN_WakeUp:0000000000000000 HAL_CAN_WakeUp
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:858    .text.HAL_CAN_WakeUp:0000000000000054 $d
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:863    .text.HAL_CAN_IsSleepActive:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:870    .text.HAL_CAN_IsSleepActive:0000000000000000 HAL_CAN_IsSleepActive
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:913    .text.HAL_CAN_AddTxMessage:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:920    .text.HAL_CAN_AddTxMessage:0000000000000000 HAL_CAN_AddTxMessage
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1099   .text.HAL_CAN_AbortTxRequest:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1106   .text.HAL_CAN_AbortTxRequest:0000000000000000 HAL_CAN_AbortTxRequest
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1173   .text.HAL_CAN_GetTxMailboxesFreeLevel:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1180   .text.HAL_CAN_GetTxMailboxesFreeLevel:0000000000000000 HAL_CAN_GetTxMailboxesFreeLevel
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1240   .text.HAL_CAN_IsTxMessagePending:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1247   .text.HAL_CAN_IsTxMessagePending:0000000000000000 HAL_CAN_IsTxMessagePending
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1292   .text.HAL_CAN_GetTxTimestamp:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1299   .text.HAL_CAN_GetTxTimestamp:0000000000000000 HAL_CAN_GetTxTimestamp
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1354   .text.HAL_CAN_GetRxMessage:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1361   .text.HAL_CAN_GetRxMessage:0000000000000000 HAL_CAN_GetRxMessage
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1569   .text.HAL_CAN_GetRxFifoFillLevel:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1576   .text.HAL_CAN_GetRxFifoFillLevel:0000000000000000 HAL_CAN_GetRxFifoFillLevel
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1622   .text.HAL_CAN_ActivateNotification:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1629   .text.HAL_CAN_ActivateNotification:0000000000000000 HAL_CAN_ActivateNotification
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1671   .text.HAL_CAN_DeactivateNotification:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1678   .text.HAL_CAN_DeactivateNotification:0000000000000000 HAL_CAN_DeactivateNotification
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1720   .text.HAL_CAN_TxMailbox0CompleteCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1727   .text.HAL_CAN_TxMailbox0CompleteCallback:0000000000000000 HAL_CAN_TxMailbox0CompleteCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1741   .text.HAL_CAN_TxMailbox1CompleteCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1748   .text.HAL_CAN_TxMailbox1CompleteCallback:0000000000000000 HAL_CAN_TxMailbox1CompleteCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1762   .text.HAL_CAN_TxMailbox2CompleteCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1769   .text.HAL_CAN_TxMailbox2CompleteCallback:0000000000000000 HAL_CAN_TxMailbox2CompleteCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1783   .text.HAL_CAN_TxMailbox0AbortCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1790   .text.HAL_CAN_TxMailbox0AbortCallback:0000000000000000 HAL_CAN_TxMailbox0AbortCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1804   .text.HAL_CAN_TxMailbox1AbortCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1811   .text.HAL_CAN_TxMailbox1AbortCallback:0000000000000000 HAL_CAN_TxMailbox1AbortCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1825   .text.HAL_CAN_TxMailbox2AbortCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1832   .text.HAL_CAN_TxMailbox2AbortCallback:0000000000000000 HAL_CAN_TxMailbox2AbortCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1846   .text.HAL_CAN_RxFifo0MsgPendingCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1853   .text.HAL_CAN_RxFifo0MsgPendingCallback:0000000000000000 HAL_CAN_RxFifo0MsgPendingCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1867   .text.HAL_CAN_RxFifo0FullCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1874   .text.HAL_CAN_RxFifo0FullCallback:0000000000000000 HAL_CAN_RxFifo0FullCallback
-ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s 			page 95
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:18     .text.HAL_CAN_MspInit:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:25     .text.HAL_CAN_MspInit:0000000000000000 HAL_CAN_MspInit
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:40     .text.HAL_CAN_Init:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:47     .text.HAL_CAN_Init:0000000000000000 HAL_CAN_Init
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:283    .text.HAL_CAN_MspDeInit:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:290    .text.HAL_CAN_MspDeInit:0000000000000000 HAL_CAN_MspDeInit
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:304    .text.HAL_CAN_ConfigFilter:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:311    .text.HAL_CAN_ConfigFilter:0000000000000000 HAL_CAN_ConfigFilter
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:496    .text.HAL_CAN_Start:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:503    .text.HAL_CAN_Start:0000000000000000 HAL_CAN_Start
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:580    .text.HAL_CAN_Stop:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:587    .text.HAL_CAN_Stop:0000000000000000 HAL_CAN_Stop
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:666    .text.HAL_CAN_DeInit:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:673    .text.HAL_CAN_DeInit:0000000000000000 HAL_CAN_DeInit
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:723    .text.HAL_CAN_RequestSleep:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:730    .text.HAL_CAN_RequestSleep:0000000000000000 HAL_CAN_RequestSleep
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:771    .text.HAL_CAN_WakeUp:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:778    .text.HAL_CAN_WakeUp:0000000000000000 HAL_CAN_WakeUp
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:858    .text.HAL_CAN_WakeUp:0000000000000054 $d
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:863    .text.HAL_CAN_IsSleepActive:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:870    .text.HAL_CAN_IsSleepActive:0000000000000000 HAL_CAN_IsSleepActive
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:913    .text.HAL_CAN_AddTxMessage:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:920    .text.HAL_CAN_AddTxMessage:0000000000000000 HAL_CAN_AddTxMessage
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1099   .text.HAL_CAN_AbortTxRequest:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1106   .text.HAL_CAN_AbortTxRequest:0000000000000000 HAL_CAN_AbortTxRequest
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1173   .text.HAL_CAN_GetTxMailboxesFreeLevel:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1180   .text.HAL_CAN_GetTxMailboxesFreeLevel:0000000000000000 HAL_CAN_GetTxMailboxesFreeLevel
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1240   .text.HAL_CAN_IsTxMessagePending:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1247   .text.HAL_CAN_IsTxMessagePending:0000000000000000 HAL_CAN_IsTxMessagePending
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1292   .text.HAL_CAN_GetTxTimestamp:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1299   .text.HAL_CAN_GetTxTimestamp:0000000000000000 HAL_CAN_GetTxTimestamp
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1354   .text.HAL_CAN_GetRxMessage:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1361   .text.HAL_CAN_GetRxMessage:0000000000000000 HAL_CAN_GetRxMessage
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1569   .text.HAL_CAN_GetRxFifoFillLevel:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1576   .text.HAL_CAN_GetRxFifoFillLevel:0000000000000000 HAL_CAN_GetRxFifoFillLevel
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1622   .text.HAL_CAN_ActivateNotification:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1629   .text.HAL_CAN_ActivateNotification:0000000000000000 HAL_CAN_ActivateNotification
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1671   .text.HAL_CAN_DeactivateNotification:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1678   .text.HAL_CAN_DeactivateNotification:0000000000000000 HAL_CAN_DeactivateNotification
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1720   .text.HAL_CAN_TxMailbox0CompleteCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1727   .text.HAL_CAN_TxMailbox0CompleteCallback:0000000000000000 HAL_CAN_TxMailbox0CompleteCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1741   .text.HAL_CAN_TxMailbox1CompleteCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1748   .text.HAL_CAN_TxMailbox1CompleteCallback:0000000000000000 HAL_CAN_TxMailbox1CompleteCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1762   .text.HAL_CAN_TxMailbox2CompleteCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1769   .text.HAL_CAN_TxMailbox2CompleteCallback:0000000000000000 HAL_CAN_TxMailbox2CompleteCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1783   .text.HAL_CAN_TxMailbox0AbortCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1790   .text.HAL_CAN_TxMailbox0AbortCallback:0000000000000000 HAL_CAN_TxMailbox0AbortCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1804   .text.HAL_CAN_TxMailbox1AbortCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1811   .text.HAL_CAN_TxMailbox1AbortCallback:0000000000000000 HAL_CAN_TxMailbox1AbortCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1825   .text.HAL_CAN_TxMailbox2AbortCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1832   .text.HAL_CAN_TxMailbox2AbortCallback:0000000000000000 HAL_CAN_TxMailbox2AbortCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1846   .text.HAL_CAN_RxFifo0MsgPendingCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1853   .text.HAL_CAN_RxFifo0MsgPendingCallback:0000000000000000 HAL_CAN_RxFifo0MsgPendingCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1867   .text.HAL_CAN_RxFifo0FullCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1874   .text.HAL_CAN_RxFifo0FullCallback:0000000000000000 HAL_CAN_RxFifo0FullCallback
+ARM GAS  /var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s 			page 95
 
 
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1888   .text.HAL_CAN_RxFifo1MsgPendingCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1895   .text.HAL_CAN_RxFifo1MsgPendingCallback:0000000000000000 HAL_CAN_RxFifo1MsgPendingCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1909   .text.HAL_CAN_RxFifo1FullCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1916   .text.HAL_CAN_RxFifo1FullCallback:0000000000000000 HAL_CAN_RxFifo1FullCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1930   .text.HAL_CAN_SleepCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1937   .text.HAL_CAN_SleepCallback:0000000000000000 HAL_CAN_SleepCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1951   .text.HAL_CAN_WakeUpFromRxMsgCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1958   .text.HAL_CAN_WakeUpFromRxMsgCallback:0000000000000000 HAL_CAN_WakeUpFromRxMsgCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1972   .text.HAL_CAN_ErrorCallback:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1979   .text.HAL_CAN_ErrorCallback:0000000000000000 HAL_CAN_ErrorCallback
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:1993   .text.HAL_CAN_IRQHandler:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:2000   .text.HAL_CAN_IRQHandler:0000000000000000 HAL_CAN_IRQHandler
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:2421   .text.HAL_CAN_GetState:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:2428   .text.HAL_CAN_GetState:0000000000000000 HAL_CAN_GetState
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:2476   .text.HAL_CAN_GetError:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:2483   .text.HAL_CAN_GetError:0000000000000000 HAL_CAN_GetError
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:2500   .text.HAL_CAN_ResetError:0000000000000000 $t
-/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//cctYGUqP.s:2507   .text.HAL_CAN_ResetError:0000000000000000 HAL_CAN_ResetError
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1888   .text.HAL_CAN_RxFifo1MsgPendingCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1895   .text.HAL_CAN_RxFifo1MsgPendingCallback:0000000000000000 HAL_CAN_RxFifo1MsgPendingCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1909   .text.HAL_CAN_RxFifo1FullCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1916   .text.HAL_CAN_RxFifo1FullCallback:0000000000000000 HAL_CAN_RxFifo1FullCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1930   .text.HAL_CAN_SleepCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1937   .text.HAL_CAN_SleepCallback:0000000000000000 HAL_CAN_SleepCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1951   .text.HAL_CAN_WakeUpFromRxMsgCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1958   .text.HAL_CAN_WakeUpFromRxMsgCallback:0000000000000000 HAL_CAN_WakeUpFromRxMsgCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1972   .text.HAL_CAN_ErrorCallback:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1979   .text.HAL_CAN_ErrorCallback:0000000000000000 HAL_CAN_ErrorCallback
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:1993   .text.HAL_CAN_IRQHandler:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:2000   .text.HAL_CAN_IRQHandler:0000000000000000 HAL_CAN_IRQHandler
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:2421   .text.HAL_CAN_GetState:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:2428   .text.HAL_CAN_GetState:0000000000000000 HAL_CAN_GetState
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:2476   .text.HAL_CAN_GetError:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:2483   .text.HAL_CAN_GetError:0000000000000000 HAL_CAN_GetError
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:2500   .text.HAL_CAN_ResetError:0000000000000000 $t
+/var/folders/pr/jy5_dyq97qq9ykqb3p58dhg00000gn/T//ccLEXNi6.s:2507   .text.HAL_CAN_ResetError:0000000000000000 HAL_CAN_ResetError
 
 UNDEFINED SYMBOLS
 HAL_GetTick
