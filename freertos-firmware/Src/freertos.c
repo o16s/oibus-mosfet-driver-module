@@ -161,7 +161,7 @@ void StartDefaultTask(void const * argument)
         uint16_t uxHighWaterMark;
         uxHighWaterMark = uxTaskGetStackHighWaterMark( NULL );
         oi_uavcan_publish_keyVal("def",uxHighWaterMark);
-        
+
         HAL_GPIO_TogglePin(GPIOA, LED_Pin);
 
         osDelay(1000);
