@@ -53,7 +53,7 @@ extern "C" {
 #define UAVCAN_PROTOCOL_PARAM_GETSET_ID				    11
 
 
-
+#define CANSPEED 100000
 #define UNIQUE_ID_LENGTH_BYTES 16
 
 #define CANARD_SPIN_PERIOD   1500
