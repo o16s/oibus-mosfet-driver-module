@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/Users/raffael/Desktop/Octanis/OIBUS/oibus-mosfet-driver-module/rev1/OIBUS_MOSFET_driver_module/OIBUS_MOSFET_driver_module.sch</source>
+    <source>~/Desktop/Octanis/OIBUS/oibus-mosfet-driver-module/rev1/OIBUS_MOSFET_driver_module/OIBUS_MOSFET_driver_module.sch</source>
     <date>2019 April 12, Friday 20:33:28</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
