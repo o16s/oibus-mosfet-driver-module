@@ -1,0 +1,15 @@
+### Module positions - created on 2019 April 30, Tuesday 16:43:43 ###
+### Printed by Pcbnew version kicad (5.0.1-3-g963ef8bb5)
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val       Package                 PosX       PosY       Rot  Side
+JP4       0_OHM     R_0603_1608Metric  -115.6462  -127.2794  270.0000  bottom
+JP6       0_OHM     R_0603_1608Metric  -105.2830   -63.0173   90.0000  bottom
+JP7       0_OHM     R_0603_1608Metric   -69.5960   -87.0204  180.0000  bottom
+JP8       0_OHM     R_0603_1608Metric   -69.5960  -111.0234  180.0000  bottom
+JP13      0_OHM     R_0603_1608Metric   -74.6506  -126.3142  270.0000  bottom
+JP14      0_OHM     R_0603_1608Metric  -117.0686   -74.8284    0.0000  bottom
+JP15      0_OHM     R_0603_1608Metric   -68.3006   -63.2460  270.0000  bottom
+JP16      0_OHM     R_0603_1608Metric   -98.5520  -107.8484  270.0000  bottom
+JP28      0_OHM     R_0603_1608Metric  -117.0432  -100.2284    0.0000  bottom
+## End

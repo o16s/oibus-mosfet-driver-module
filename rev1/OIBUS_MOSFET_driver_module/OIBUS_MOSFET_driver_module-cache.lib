@@ -73,29 +73,6 @@ X Pin_6 6 200 -300 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_01x04
-#
-DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 150 50 -250 1 1 10 f
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-X Pin_4 4 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Screw_Terminal_01x02
 #
 DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
@@ -763,6 +740,27 @@ A 50 0 50 1 1799 0 1 0 N 100 0 0 0
 A 150 0 50 1 1799 0 1 0 N 200 0 100 0
 X 1 1 -250 0 50 R 30 30 1 1 I
 X 2 2 250 0 50 L 30 30 1 1 I
+ENDDRAW
+ENDDEF
+#
+# uavcan_connector_uavcan
+#
+DEF uavcan_connector_uavcan J 0 40 Y Y 1 F N
+F0 "J" -150 300 50 H V R CNN
+F1 "uavcan_connector_uavcan" -200 -150 50 V V L CNN
+F2 "" -150 0 50 V I C CNN
+F3 "" -150 0 50 V I C CNN
+$FPLIST
+ uav*
+ can*
+$ENDFPLIST
+DRAW
+S 150 250 -150 -250 0 1 10 f
+P 8 0 1 10 150 200 -50 200 -50 100 -100 100 -100 -100 -50 -100 -50 -200 150 -200 N
+X 5V 1 250 -150 100 L 50 50 1 1 P
+X CANH 2 250 -50 100 L 50 50 1 1 P
+X CANL 3 250 50 100 L 50 50 1 1 P
+X GND 4 250 150 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
