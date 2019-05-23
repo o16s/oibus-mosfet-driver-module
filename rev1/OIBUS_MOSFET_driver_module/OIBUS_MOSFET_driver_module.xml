@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/sam/Repositories/Octanis/oibus-mosfet-driver-module/rev1/OIBUS_MOSFET_driver_module/OIBUS_MOSFET_driver_module.sch</source>
-    <date>2019 April 12, Friday 14:10:34</date>
+    <source>/Users/raffael/Desktop/Octanis/OIBUS/oibus-mosfet-driver-module/rev1/OIBUS_MOSFET_driver_module/OIBUS_MOSFET_driver_module.sch</source>
+    <date>2019 April 30, Tuesday 16:20:48</date>
     <tool>Eeschema (5.0.1-3-g963ef8bb5)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -22,6 +22,9 @@
     <comp ref="H1">
       <value>OIBUS_104.1_CONN_A</value>
       <footprint>lib_fp_global:SAMTEC_SSQ-126-22-G-D</footprint>
+      <fields>
+        <field name="MPN">SSQ-126-22-G-D&#xD;</field>
+      </fields>
       <libsource lib="OIBUS_104" part="OIBUS_104.1_CONN_A" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C06D20C</tstamp>
@@ -29,6 +32,9 @@
     <comp ref="H2">
       <value>OIBUS_104.1_CONN_B</value>
       <footprint>lib_fp_global:SAMTEC_SSQ-126-22-G-D</footprint>
+      <fields>
+        <field name="MPN">SSQ-126-22-G-D&#xD;</field>
+      </fields>
       <libsource lib="OIBUS_104" part="OIBUS_104.1_CONN_B" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C06D354</tstamp>
@@ -37,14 +43,20 @@
       <value>TLP291</value>
       <footprint>TLP291(SE:SOIC127P700X220-4N</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&amp;prodName=TLP291</datasheet>
+      <fields>
+        <field name="MPN">TLP291(SE(T</field>
+      </fields>
       <libsource lib="Isolator" part="TLP291" description="DC Optocoupler, Vce 80V, CTR 50-100%, SOP4"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C06EB1A</tstamp>
     </comp>
     <comp ref="R17">
-      <value>1K5</value>
+      <value>1k5</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-071K5L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C06F10E</tstamp>
@@ -53,30 +65,42 @@
       <value>D</value>
       <footprint>FM4004W-W:DIOM5025X231N</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">FM4004-W</field>
+      </fields>
       <libsource lib="Device" part="D" description="Diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C070B29</tstamp>
     </comp>
     <comp ref="LED2">
-      <value>LED</value>
+      <value>LED_yellow</value>
       <footprint>LEDs:LED_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTST-S270AKT&#xD;</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C070C58</tstamp>
     </comp>
     <comp ref="R3">
-      <value>4K7</value>
+      <value>3k6</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-073K6L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C070D0D</tstamp>
     </comp>
     <comp ref="R4">
-      <value>18K</value>
+      <value>18k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0718KL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C070DB5</tstamp>
@@ -85,15 +109,21 @@
       <value>D_Zener</value>
       <footprint>Diodes_SMD:D_SOT-23_ANK</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BZX84C8V2LT14&#xD;</field>
+      </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C070F6B</tstamp>
     </comp>
     <comp ref="D18">
-      <value>D</value>
+      <value>1N5819</value>
       <footprint>Diodes_SMD:D_SOD-123</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Device" part="D" description="Diode"/>
+      <fields>
+        <field name="MPN">1N5819HW1-7-F&#xD;</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C083F85</tstamp>
     </comp>
@@ -101,6 +131,9 @@
       <value>100u Elko</value>
       <footprint>Capacitors_SMD:CP_Elec_6.3x7.7</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">EMVA350ADA101MF80G &#xD;</field>
+      </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C084602</tstamp>
@@ -109,6 +142,9 @@
       <value>5V - 24V, Molex Ultrafit</value>
       <footprint>172310-1202:MOLEX_172310-1202</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">172310-1202</field>
+      </fields>
       <libsource lib="Connector" part="Conn_01x02_Female" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C086A21</tstamp>
@@ -117,6 +153,9 @@
       <value>+</value>
       <footprint>CTB93HE_2:SHDR2W80P0X381_1X2_900X920X725P</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CTBP93HE/2</field>
+      </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C086E7A</tstamp>
@@ -125,6 +164,9 @@
       <value>100u Elko</value>
       <footprint>Capacitors_SMD:CP_Elec_6.3x7.7</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">EMVA350ADA101MF80G &#xD;</field>
+      </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C088533</tstamp>
@@ -132,6 +174,9 @@
     <comp ref="T2">
       <value>DMG6402LVT</value>
       <footprint>DMG6602SVT-7:SOT95P280X90-6N</footprint>
+      <fields>
+        <field name="MPN">DMG6402LVT-7&#xD;</field>
+      </fields>
       <libsource lib="DMG6402LVT" part="DMG6402LVT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C06FCFC</tstamp>
@@ -140,6 +185,9 @@
       <value>TLP291</value>
       <footprint>TLP291(SE:SOIC127P700X220-4N</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&amp;prodName=TLP291</datasheet>
+      <fields>
+        <field name="MPN">TLP291(SE(T</field>
+      </fields>
       <libsource lib="Isolator" part="TLP291" description="DC Optocoupler, Vce 80V, CTR 50-100%, SOP4"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F5D38</tstamp>
@@ -148,30 +196,42 @@
       <value>D</value>
       <footprint>FM4004W-W:DIOM5025X231N</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">FM4004-W</field>
+      </fields>
       <libsource lib="Device" part="D" description="Diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F7B10</tstamp>
     </comp>
     <comp ref="LED1">
-      <value>LED</value>
+      <value>LED_yellow</value>
       <footprint>LEDs:LED_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTST-S270AKT&#xD;</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F7B17</tstamp>
     </comp>
     <comp ref="R1">
-      <value>4K7</value>
+      <value>3k6</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-073K6L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F7B1E</tstamp>
     </comp>
     <comp ref="R2">
-      <value>18K</value>
+      <value>18k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0718KL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F7B25</tstamp>
@@ -180,6 +240,9 @@
       <value>D_Zener</value>
       <footprint>Diodes_SMD:D_SOT-23_ANK</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BZX84C8V2LT14&#xD;</field>
+      </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F7B2C</tstamp>
@@ -187,6 +250,9 @@
     <comp ref="T1">
       <value>DMG6402LVT</value>
       <footprint>DMG6602SVT-7:SOT95P280X90-6N</footprint>
+      <fields>
+        <field name="MPN">DMG6402LVT-7&#xD;</field>
+      </fields>
       <libsource lib="DMG6402LVT" part="DMG6402LVT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F7B55</tstamp>
@@ -195,6 +261,9 @@
       <value>TLP291</value>
       <footprint>TLP291(SE:SOIC127P700X220-4N</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&amp;prodName=TLP291</datasheet>
+      <fields>
+        <field name="MPN">TLP291(SE(T</field>
+      </fields>
       <libsource lib="Isolator" part="TLP291" description="DC Optocoupler, Vce 80V, CTR 50-100%, SOP4"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9AEA</tstamp>
@@ -203,30 +272,43 @@
       <value>D</value>
       <footprint>FM4004W-W:DIOM5025X231N</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">FM4004-W</field>
+      </fields>
       <libsource lib="Device" part="D" description="Diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9AFE</tstamp>
     </comp>
     <comp ref="LED4">
-      <value>LED</value>
+      <value>LED_yellow</value>
       <footprint>LEDs:LED_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTST-S270AKT&#xD;</field>
+        <field name="assembly_note">side-looking towards PCB edge</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9B05</tstamp>
     </comp>
     <comp ref="R7">
-      <value>4K7</value>
+      <value>3k6</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-073K6L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9B0C</tstamp>
     </comp>
     <comp ref="R8">
-      <value>18K</value>
+      <value>18k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0718KL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9B13</tstamp>
@@ -235,6 +317,9 @@
       <value>D_Zener</value>
       <footprint>Diodes_SMD:D_SOT-23_ANK</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BZX84C8V2LT14&#xD;</field>
+      </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9B1A</tstamp>
@@ -242,6 +327,9 @@
     <comp ref="T4">
       <value>DMG6402LVT</value>
       <footprint>DMG6602SVT-7:SOT95P280X90-6N</footprint>
+      <fields>
+        <field name="MPN">DMG6402LVT-7&#xD;</field>
+      </fields>
       <libsource lib="DMG6402LVT" part="DMG6402LVT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9B43</tstamp>
@@ -250,6 +338,9 @@
       <value>TLP291</value>
       <footprint>TLP291(SE:SOIC127P700X220-4N</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&amp;prodName=TLP291</datasheet>
+      <fields>
+        <field name="MPN">TLP291(SE(T</field>
+      </fields>
       <libsource lib="Isolator" part="TLP291" description="DC Optocoupler, Vce 80V, CTR 50-100%, SOP4"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9B63</tstamp>
@@ -258,30 +349,42 @@
       <value>D</value>
       <footprint>FM4004W-W:DIOM5025X231N</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">FM4004-W</field>
+      </fields>
       <libsource lib="Device" part="D" description="Diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9B80</tstamp>
     </comp>
     <comp ref="LED3">
-      <value>LED</value>
+      <value>LED_yellow</value>
       <footprint>LEDs:LED_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTST-S270AKT&#xD;</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9B87</tstamp>
     </comp>
     <comp ref="R5">
-      <value>4K7</value>
+      <value>3k6</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-073K6L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9B8E</tstamp>
     </comp>
     <comp ref="R6">
-      <value>18K</value>
+      <value>18k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0718KL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9B95</tstamp>
@@ -290,6 +393,9 @@
       <value>D_Zener</value>
       <footprint>Diodes_SMD:D_SOT-23_ANK</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BZX84C8V2LT14&#xD;</field>
+      </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9B9C</tstamp>
@@ -297,6 +403,9 @@
     <comp ref="T3">
       <value>DMG6402LVT</value>
       <footprint>DMG6602SVT-7:SOT95P280X90-6N</footprint>
+      <fields>
+        <field name="MPN">DMG6402LVT-7&#xD;</field>
+      </fields>
       <libsource lib="DMG6402LVT" part="DMG6402LVT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C0F9BC5</tstamp>
@@ -305,6 +414,9 @@
       <value>TLP291</value>
       <footprint>TLP291(SE:SOIC127P700X220-4N</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&amp;prodName=TLP291</datasheet>
+      <fields>
+        <field name="MPN">TLP291(SE(T</field>
+      </fields>
       <libsource lib="Isolator" part="TLP291" description="DC Optocoupler, Vce 80V, CTR 50-100%, SOP4"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1001E3</tstamp>
@@ -313,30 +425,42 @@
       <value>D</value>
       <footprint>FM4004W-W:DIOM5025X231N</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">FM4004-W</field>
+      </fields>
       <libsource lib="Device" part="D" description="Diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1001F7</tstamp>
     </comp>
     <comp ref="LED6">
-      <value>LED</value>
+      <value>LED_yellow</value>
       <footprint>LEDs:LED_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTST-S270AKT&#xD;</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1001FE</tstamp>
     </comp>
     <comp ref="R11">
-      <value>4K7</value>
+      <value>3k6</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-073K6L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C100205</tstamp>
     </comp>
     <comp ref="R12">
-      <value>18K</value>
+      <value>18k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0718KL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C10020C</tstamp>
@@ -345,6 +469,9 @@
       <value>D_Zener</value>
       <footprint>Diodes_SMD:D_SOT-23_ANK</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BZX84C8V2LT14&#xD;</field>
+      </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C100213</tstamp>
@@ -352,6 +479,9 @@
     <comp ref="T6">
       <value>DMG6402LVT</value>
       <footprint>DMG6602SVT-7:SOT95P280X90-6N</footprint>
+      <fields>
+        <field name="MPN">DMG6402LVT-7&#xD;</field>
+      </fields>
       <libsource lib="DMG6402LVT" part="DMG6402LVT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C10023C</tstamp>
@@ -360,6 +490,9 @@
       <value>TLP291</value>
       <footprint>TLP291(SE:SOIC127P700X220-4N</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&amp;prodName=TLP291</datasheet>
+      <fields>
+        <field name="MPN">TLP291(SE(T</field>
+      </fields>
       <libsource lib="Isolator" part="TLP291" description="DC Optocoupler, Vce 80V, CTR 50-100%, SOP4"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C10025C</tstamp>
@@ -368,30 +501,42 @@
       <value>D</value>
       <footprint>FM4004W-W:DIOM5025X231N</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">FM4004-W</field>
+      </fields>
       <libsource lib="Device" part="D" description="Diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C100279</tstamp>
     </comp>
     <comp ref="LED5">
-      <value>LED</value>
+      <value>LED_yellow</value>
       <footprint>LEDs:LED_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTST-S270AKT&#xD;</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C100280</tstamp>
     </comp>
     <comp ref="R9">
-      <value>4K7</value>
+      <value>3k6</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-073K6L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C100287</tstamp>
     </comp>
     <comp ref="R10">
-      <value>18K</value>
+      <value>18k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0718KL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C10028E</tstamp>
@@ -400,6 +545,9 @@
       <value>D_Zener</value>
       <footprint>Diodes_SMD:D_SOT-23_ANK</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BZX84C8V2LT14&#xD;</field>
+      </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C100295</tstamp>
@@ -407,6 +555,9 @@
     <comp ref="T5">
       <value>DMG6402LVT</value>
       <footprint>DMG6602SVT-7:SOT95P280X90-6N</footprint>
+      <fields>
+        <field name="MPN">DMG6402LVT-7&#xD;</field>
+      </fields>
       <libsource lib="DMG6402LVT" part="DMG6402LVT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1002BE</tstamp>
@@ -415,6 +566,9 @@
       <value>TLP291</value>
       <footprint>TLP291(SE:SOIC127P700X220-4N</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&amp;prodName=TLP291</datasheet>
+      <fields>
+        <field name="MPN">TLP291(SE(T</field>
+      </fields>
       <libsource lib="Isolator" part="TLP291" description="DC Optocoupler, Vce 80V, CTR 50-100%, SOP4"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1002D5</tstamp>
@@ -423,30 +577,42 @@
       <value>D</value>
       <footprint>FM4004W-W:DIOM5025X231N</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">FM4004-W</field>
+      </fields>
       <libsource lib="Device" part="D" description="Diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1002E9</tstamp>
     </comp>
     <comp ref="LED8">
-      <value>LED</value>
+      <value>LED_yellow</value>
       <footprint>LEDs:LED_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTST-S270AKT&#xD;</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1002F0</tstamp>
     </comp>
     <comp ref="R15">
-      <value>4K7</value>
+      <value>3k6</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-073K6L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1002F7</tstamp>
     </comp>
     <comp ref="R16">
-      <value>18K</value>
+      <value>18k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0718KL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1002FE</tstamp>
@@ -455,6 +621,9 @@
       <value>D_Zener</value>
       <footprint>Diodes_SMD:D_SOT-23_ANK</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BZX84C8V2LT14&#xD;</field>
+      </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C100305</tstamp>
@@ -462,6 +631,9 @@
     <comp ref="T8">
       <value>DMG6402LVT</value>
       <footprint>DMG6602SVT-7:SOT95P280X90-6N</footprint>
+      <fields>
+        <field name="MPN">DMG6402LVT-7&#xD;</field>
+      </fields>
       <libsource lib="DMG6402LVT" part="DMG6402LVT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C10032E</tstamp>
@@ -470,6 +642,9 @@
       <value>TLP291</value>
       <footprint>TLP291(SE:SOIC127P700X220-4N</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&amp;prodName=TLP291</datasheet>
+      <fields>
+        <field name="MPN">TLP291(SE(T</field>
+      </fields>
       <libsource lib="Isolator" part="TLP291" description="DC Optocoupler, Vce 80V, CTR 50-100%, SOP4"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C10034E</tstamp>
@@ -478,30 +653,42 @@
       <value>D</value>
       <footprint>FM4004W-W:DIOM5025X231N</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">FM4004-W</field>
+      </fields>
       <libsource lib="Device" part="D" description="Diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C10036B</tstamp>
     </comp>
     <comp ref="LED7">
-      <value>LED</value>
+      <value>LED_yellow</value>
       <footprint>LEDs:LED_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTST-S270AKT&#xD;</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C100372</tstamp>
     </comp>
     <comp ref="R13">
-      <value>4K7</value>
+      <value>3k6</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-073K6L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C100379</tstamp>
     </comp>
     <comp ref="R14">
-      <value>18K</value>
+      <value>18k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0718KL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C100380</tstamp>
@@ -510,6 +697,9 @@
       <value>D_Zener</value>
       <footprint>Diodes_SMD:D_SOT-23_ANK</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BZX84C8V2LT14&#xD;</field>
+      </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C100387</tstamp>
@@ -517,6 +707,9 @@
     <comp ref="T7">
       <value>DMG6402LVT</value>
       <footprint>DMG6602SVT-7:SOT95P280X90-6N</footprint>
+      <fields>
+        <field name="MPN">DMG6402LVT-7&#xD;</field>
+      </fields>
       <libsource lib="DMG6402LVT" part="DMG6402LVT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1003B0</tstamp>
@@ -525,6 +718,9 @@
       <value>+</value>
       <footprint>CTB93HE_2:SHDR2W80P0X381_1X2_900X920X725P</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CTBP93HE/2</field>
+      </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C335DEF</tstamp>
@@ -533,6 +729,9 @@
       <value>+</value>
       <footprint>CTB93HE_2:SHDR2W80P0X381_1X2_900X920X725P</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CTBP93HE/2</field>
+      </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C34BC45</tstamp>
@@ -541,6 +740,9 @@
       <value>+</value>
       <footprint>CTB93HE_2:SHDR2W80P0X381_1X2_900X920X725P</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CTBP93HE/2</field>
+      </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C362016</tstamp>
@@ -549,6 +751,9 @@
       <value>+</value>
       <footprint>CTB93HE_2:SHDR2W80P0X381_1X2_900X920X725P</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CTBP93HE/2</field>
+      </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C378BC3</tstamp>
@@ -557,6 +762,9 @@
       <value>+</value>
       <footprint>CTB93HE_2:SHDR2W80P0X381_1X2_900X920X725P</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CTBP93HE/2</field>
+      </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C38FAC6</tstamp>
@@ -565,6 +773,9 @@
       <value>+</value>
       <footprint>CTB93HE_2:SHDR2W80P0X381_1X2_900X920X725P</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CTBP93HE/2</field>
+      </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C3A7142</tstamp>
@@ -573,60 +784,81 @@
       <value>+</value>
       <footprint>CTB93HE_2:SHDR2W80P0X381_1X2_900X920X725P</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CTBP93HE/2</field>
+      </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C3BED41</tstamp>
     </comp>
     <comp ref="JP21">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C3D8F9C</tstamp>
     </comp>
     <comp ref="JP22">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C422953</tstamp>
     </comp>
     <comp ref="JP23">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C43C0A6</tstamp>
     </comp>
     <comp ref="JP24">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C455AA3</tstamp>
     </comp>
     <comp ref="JP25">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C46FD22</tstamp>
     </comp>
     <comp ref="JP26">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C48A847</tstamp>
     </comp>
     <comp ref="JP29">
-      <value>0 OHM</value>
+      <value>SolderJumper_2_Open</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
@@ -637,6 +869,9 @@
       <value>100n</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">885012206095&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C618354</tstamp>
@@ -645,6 +880,9 @@
       <value>100n</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">885012206095&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C618492</tstamp>
@@ -653,6 +891,9 @@
       <value>100n</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">885012206095&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C618552</tstamp>
@@ -661,6 +902,9 @@
       <value>100n</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">885012206095&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C965C55</tstamp>
@@ -669,6 +913,9 @@
       <value>TCAN330</value>
       <footprint>TO_SOT_Packages_SMD:SOT-23-8</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/tcan337.pdf</datasheet>
+      <fields>
+        <field name="MPN">TCAN330DCNT&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Interface_CAN_LIN" part="TCAN330" description="High-Speed CAN Transceiver, 1Mbps, 3.3V supply, silent mode, shutdown mode, SOT-23-8/SOIC-8"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C9ABB57</tstamp>
@@ -677,6 +924,9 @@
       <value>100n</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">885012206095&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CBB7A14</tstamp>
@@ -685,6 +935,9 @@
       <value>60</value>
       <footprint>Resistors_SMD:R_1206</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0760RL&#xD;RC0603JR-07330RL&#xD;</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CCB18D6</tstamp>
@@ -693,6 +946,9 @@
       <value>60</value>
       <footprint>Resistors_SMD:R_1206</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0760RL&#xD;RC0603JR-07330RL&#xD;</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CCB1A12</tstamp>
@@ -701,6 +957,9 @@
       <value>100n</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">885012206095&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CCB1B74</tstamp>
@@ -709,22 +968,31 @@
       <value>D_TVS_x2_AAC</value>
       <footprint>TO_SOT_Packages_SMD:SOT-323_SC-70</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">PESD2IVN27-UX&#xD;</field>
+      </fields>
       <libsource lib="Device" part="D_TVS_x2_AAC" description="Bidirectional dual transient-voltage-suppression diode, center on pin 3"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CCD6026</tstamp>
     </comp>
     <comp ref="JP27">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D06B51C</tstamp>
     </comp>
     <comp ref="JP28">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D095F4E</tstamp>
@@ -733,6 +1001,9 @@
       <value>100n</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">885012206095&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D195B26</tstamp>
@@ -741,6 +1012,9 @@
       <value>10p</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">885012006051&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D2CD5B6</tstamp>
@@ -749,6 +1023,9 @@
       <value>10p</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">885012006051&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D2CDCDA</tstamp>
@@ -757,6 +1034,9 @@
       <value>10n</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">885012206089&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D52C75F</tstamp>
@@ -765,6 +1045,9 @@
       <value>1u</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">885012206076&#xD;&#xD;</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D55C380</tstamp>
@@ -773,14 +1056,20 @@
       <value>10uH</value>
       <footprint>Inductors_SMD:L_0805</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MLZ2012M100WT000&#xD;</field>
+      </fields>
       <libsource lib="pspice" part="INDUCTOR" description="Capacitor symbol for simulation only"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D61D5E4</tstamp>
     </comp>
     <comp ref="LED9">
-      <value>LED</value>
+      <value>LED_green</value>
       <footprint>LEDs:LED_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTST-S270GKT&#xD;</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D64EA5F</tstamp>
@@ -789,6 +1078,9 @@
       <value>330</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-07330RL&#xD;</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D67FF6D</tstamp>
@@ -813,6 +1105,9 @@
       <value>SWD</value>
       <footprint>Pin_Headers:Pin_Header_Angled_1x06_Pitch2.54mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">649-68015-206HLF&#xD;</field>
+      </fields>
       <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DEAE411</tstamp>
@@ -866,57 +1161,78 @@
       <tstamp>5E4C76A0</tstamp>
     </comp>
     <comp ref="R18">
-      <value>1K5</value>
+      <value>1k5</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-071K5L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E5C7808</tstamp>
     </comp>
     <comp ref="R19">
-      <value>1K5</value>
+      <value>1k5</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-071K5L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E5C791A</tstamp>
     </comp>
     <comp ref="R20">
-      <value>1K5</value>
+      <value>1k5</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-071K5L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E5C7A34</tstamp>
     </comp>
     <comp ref="R21">
-      <value>1K5</value>
+      <value>1k5</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-071K5L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E5C7B47</tstamp>
     </comp>
     <comp ref="R22">
-      <value>1K5</value>
+      <value>1k5</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-071K5L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E5C7C5E</tstamp>
     </comp>
     <comp ref="R23">
-      <value>1K5</value>
+      <value>1k5</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-071K5L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E5C7F12</tstamp>
     </comp>
     <comp ref="R24">
-      <value>1K5</value>
+      <value>1k5</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-071K5L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E5C81BD</tstamp>
@@ -925,30 +1241,42 @@
       <value>D</value>
       <footprint>FM4004W-W:DIOM5025X231N</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">FM4004-W</field>
+      </fields>
       <libsource lib="Device" part="D" description="Diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE23328</tstamp>
     </comp>
     <comp ref="LED11">
-      <value>LED</value>
+      <value>LED_yellow</value>
       <footprint>LEDs:LED_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTST-S270AKT&#xD;</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE2332F</tstamp>
     </comp>
     <comp ref="R29">
-      <value>4K7</value>
+      <value>3k6</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-073K6L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE23336</tstamp>
     </comp>
     <comp ref="R31">
-      <value>18K</value>
+      <value>18k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0718KL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE2333D</tstamp>
@@ -957,6 +1285,9 @@
       <value>D_Zener</value>
       <footprint>Diodes_SMD:D_SOT-23_ANK</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BZX84C8V2LT14&#xD;</field>
+      </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE23344</tstamp>
@@ -964,6 +1295,9 @@
     <comp ref="T10">
       <value>DMG6402LVT</value>
       <footprint>DMG6602SVT-7:SOT95P280X90-6N</footprint>
+      <fields>
+        <field name="MPN">DMG6402LVT-7&#xD;</field>
+      </fields>
       <libsource lib="DMG6402LVT" part="DMG6402LVT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE2336D</tstamp>
@@ -972,30 +1306,42 @@
       <value>D</value>
       <footprint>FM4004W-W:DIOM5025X231N</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">FM4004-W</field>
+      </fields>
       <libsource lib="Device" part="D" description="Diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE23384</tstamp>
     </comp>
     <comp ref="LED10">
-      <value>LED</value>
+      <value>LED_yellow</value>
       <footprint>LEDs:LED_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTST-S270AKT&#xD;</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE2338B</tstamp>
     </comp>
     <comp ref="R28">
-      <value>4K7</value>
+      <value>3k6</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-073K6L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE23392</tstamp>
     </comp>
     <comp ref="R30">
-      <value>18K</value>
+      <value>18k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-0718KL</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE23399</tstamp>
@@ -1004,6 +1350,9 @@
       <value>D_Zener</value>
       <footprint>Diodes_SMD:D_SOT-23_ANK</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BZX84C8V2LT14&#xD;</field>
+      </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE233A0</tstamp>
@@ -1011,6 +1360,9 @@
     <comp ref="T9">
       <value>DMG6402LVT</value>
       <footprint>DMG6602SVT-7:SOT95P280X90-6N</footprint>
+      <fields>
+        <field name="MPN">DMG6402LVT-7&#xD;</field>
+      </fields>
       <libsource lib="DMG6402LVT" part="DMG6402LVT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE233C9</tstamp>
@@ -1019,6 +1371,9 @@
       <value>+</value>
       <footprint>CTB93HE_2:SHDR2W80P0X381_1X2_900X920X725P</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CTBP93HE/2</field>
+      </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE233E0</tstamp>
@@ -1027,6 +1382,9 @@
       <value>+</value>
       <footprint>CTB93HE_2:SHDR2W80P0X381_1X2_900X920X725P</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CTBP93HE/2</field>
+      </fields>
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CE233F0</tstamp>
@@ -1035,6 +1393,9 @@
       <value>TLP291</value>
       <footprint>TLP291(SE:SOIC127P700X220-4N</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&amp;prodName=TLP291</datasheet>
+      <fields>
+        <field name="MPN">TLP291(SE(T</field>
+      </fields>
       <libsource lib="Isolator" part="TLP291" description="DC Optocoupler, Vce 80V, CTR 50-100%, SOP4"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CEBBDDD</tstamp>
@@ -1043,22 +1404,31 @@
       <value>TLP291</value>
       <footprint>TLP291(SE:SOIC127P700X220-4N</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&amp;prodName=TLP291</datasheet>
+      <fields>
+        <field name="MPN">TLP291(SE(T</field>
+      </fields>
       <libsource lib="Isolator" part="TLP291" description="DC Optocoupler, Vce 80V, CTR 50-100%, SOP4"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CEBBDED</tstamp>
     </comp>
     <comp ref="R32">
-      <value>1K5</value>
+      <value>1k5</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-071K5L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CEBBDFD</tstamp>
     </comp>
     <comp ref="R33">
-      <value>1K5</value>
+      <value>1k5</value>
       <footprint>Resistors_SMD:R_0603</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-071K5L</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CEBBE04</tstamp>
@@ -1067,6 +1437,9 @@
       <value>STM32F303CCTx</value>
       <footprint>Package_QFP:LQFP-48_7x7mm_P0.5mm</footprint>
       <datasheet>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00058181.pdf</datasheet>
+      <fields>
+        <field name="MPN">STM32F303CCT6</field>
+      </fields>
       <libsource lib="MCU_ST_STM32F3" part="STM32F303CCTx" description="ARM Cortex-M4 MCU, 256KB flash, 40KB RAM, 72MHz, 2-3.6V, 37 GPIO, LQFP-48"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C5DE465</tstamp>
@@ -1075,6 +1448,9 @@
       <value>16M</value>
       <footprint>Crystals:Crystal_SMD_SeikoEpson_FA238-4pin_3.2x2.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">FA-238 16.0000MA30X-AG0&#xD;</field>
+      </fields>
       <libsource lib="Device" part="Crystal_GND24_Small" description="Four pin crystal, GND on pins 2 and 4, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D059936</tstamp>
@@ -1120,65 +1496,89 @@
       <tstamp>5E08FA34</tstamp>
     </comp>
     <comp ref="JP16">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C18A8D8</tstamp>
     </comp>
     <comp ref="JP15">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C35D503</tstamp>
     </comp>
     <comp ref="JP14">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C35D62F</tstamp>
     </comp>
     <comp ref="JP13">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C35D761</tstamp>
     </comp>
     <comp ref="JP8">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C35D9AE</tstamp>
     </comp>
     <comp ref="JP7">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C35D9B7</tstamp>
     </comp>
     <comp ref="JP6">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C35D9BE</tstamp>
     </comp>
     <comp ref="JP4">
-      <value>0 OHM</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-070RL&#xD;</field>
+      </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C35D9C5</tstamp>
@@ -1217,14 +1617,17 @@
     </comp>
     <comp ref="J14">
       <value>UAVCAN JST GH</value>
-      <footprint>Connectors_JST:JST_GH_SM04B-GHS-TB_04x1.25mm_Angled</footprint>
+      <footprint>lib_fp_global:uavcan_connector</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <fields>
+        <field name="MPN"> SM04B-GHS-TB(LF)(SN)- </field>
+      </fields>
+      <libsource lib="uavcan_connector" part="uavcan" description="RJ connector, 4P4C (4 positions 4 connected), RJ9/RJ10/RJ22"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F967015</tstamp>
     </comp>
     <comp ref="JP17">
-      <value>0 OHM</value>
+      <value>SolderJumper_2_Open</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
@@ -1295,23 +1698,6 @@
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
         <pin num="2" name="Pin_2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x04">
-      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x04</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
-        <pin num="4" name="Pin_4" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="DMG6402LVT" part="DMG6402LVT">
@@ -1387,6 +1773,24 @@
       <fields>
         <field name="Reference">D</field>
         <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
       </fields>
       <pins>
         <pin num="1" name="K" type="passive"/>
@@ -1767,40 +2171,58 @@
         <pin num="2" name="2" type="input"/>
       </pins>
     </libpart>
+    <libpart lib="uavcan_connector" part="uavcan">
+      <description>RJ connector, 4P4C (4 positions 4 connected), RJ9/RJ10/RJ22</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>uav*</fp>
+        <fp>can*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">uavcan</field>
+      </fields>
+      <pins>
+        <pin num="1" name="5V" type="passive"/>
+        <pin num="2" name="CANH" type="passive"/>
+        <pin num="3" name="CANL" type="passive"/>
+        <pin num="4" name="GND" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector">
-      <uri>/sam/Repositories/misc/kicad-symbols/Connector.lib</uri>
-    </library>
-    <library logical="Connector_Generic">
-      <uri>/sam/Repositories/misc/kicad-symbols/Connector_Generic.lib</uri>
+      <uri>/Users/raffael/kicad/kicad-symbols/Connector.lib</uri>
     </library>
     <library logical="DMG6402LVT">
-      <uri>/sam/Repositories/Octanis/oibus-mosfet-driver-module/rev1/OIBUS_MOSFET_driver_module/lib_sch/DMG6402LVT.lib</uri>
+      <uri>/Users/raffael/Desktop/Octanis/OIBUS/oibus-mosfet-driver-module/rev1/OIBUS_MOSFET_driver_module/lib_sch/DMG6402LVT.lib</uri>
     </library>
     <library logical="Device">
-      <uri>/sam/Repositories/misc/kicad-symbols/Device.lib</uri>
+      <uri>/Users/raffael/kicad/kicad-symbols/Device.lib</uri>
     </library>
     <library logical="Interface_CAN_LIN">
-      <uri>/sam/Repositories/misc/kicad-symbols/Interface_CAN_LIN.lib</uri>
+      <uri>/Users/raffael/kicad/kicad-symbols/Interface_CAN_LIN.lib</uri>
     </library>
     <library logical="Isolator">
-      <uri>/sam/Repositories/misc/kicad-symbols/Isolator.lib</uri>
+      <uri>/Users/raffael/kicad/kicad-symbols/Isolator.lib</uri>
     </library>
     <library logical="Jumper">
-      <uri>/sam/Repositories/misc/kicad-symbols/Jumper.lib</uri>
+      <uri>/Users/raffael/kicad/kicad-symbols/Jumper.lib</uri>
     </library>
     <library logical="MCU_ST_STM32F3">
-      <uri>/sam/Repositories/misc/kicad-symbols/MCU_ST_STM32F3.lib</uri>
+      <uri>/Users/raffael/kicad/kicad-symbols/MCU_ST_STM32F3.lib</uri>
     </library>
     <library logical="Mechanical">
-      <uri>/sam/Repositories/misc/kicad-symbols/Mechanical.lib</uri>
+      <uri>/Users/raffael/kicad/kicad-symbols/Mechanical.lib</uri>
     </library>
     <library logical="OIBUS_104">
-      <uri>/Users/sam/ikea.octanis.ch/Octanis Instruments/Engineering/KiCAD/lib_sch_global/OIBUS_104.lib</uri>
+      <uri>/Users/raffael/Desktop/OctanisOÜ/Octanis Instruments/Engineering/KiCAD/lib_sch_global/OIBUS_104.lib</uri>
     </library>
     <library logical="pspice">
-      <uri>/sam/Repositories/misc/kicad-symbols/pspice.lib</uri>
+      <uri>/Users/raffael/kicad/kicad-symbols/pspice.lib</uri>
+    </library>
+    <library logical="uavcan_connector">
+      <uri>/Users/raffael/Desktop/OctanisOÜ/Octanis Instruments/Engineering/KiCAD/lib_sch_global/uavcan_connector.lib</uri>
     </library>
   </libraries>
   <nets>

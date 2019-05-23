@@ -8,6 +8,7 @@
 #include <string.h>
 #include <stdint.h>
 
+
 /**********
  private variables
  **********/
@@ -292,7 +293,11 @@ void oi_uavcan_init(void)
 
 
   CanardSTM32CANTimings timings;
+<<<<<<< HEAD
   int result = canardSTM32ComputeCANTimings(HAL_RCC_GetPCLK1Freq(), 100000, &timings);
+=======
+  int result = canardSTM32ComputeCANTimings(HAL_RCC_GetPCLK1Freq(), CANSPEED, &timings);
+>>>>>>> 00ae52756276f382bfc5b0f3b734b033a92f71d8
   if (result)
   {
       //__ASM volatile("BKPT #01");
