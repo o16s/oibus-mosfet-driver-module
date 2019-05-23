@@ -2011,8 +2011,9 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/bin/../lib/gcc/arm
                 0x0000000008000aac       0x2e build/oi_uavcan.o
  *fill*         0x0000000008000ada        0x2 
  .text.oi_uavcan_init
-                0x0000000008000adc      0x15c build/oi_uavcan.o
+                0x0000000008000adc      0x158 build/oi_uavcan.o
                 0x0000000008000adc                oi_uavcan_init
+ *fill*         0x0000000008000c34        0x4 
  .text.oi_uavcan_spinCanard
                 0x0000000008000c38       0x60 build/oi_uavcan.o
                 0x0000000008000c38                oi_uavcan_spinCanard
@@ -3155,100 +3156,100 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/bin/../lib/gcc/arm
                 0x0000000000000f47       0x22 /usr/local/Cellar/arm-none-eabi-gcc/7-2018-q2-update/gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 OUTPUT(build/freertos-firmware.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x2cf08
+.debug_info     0x0000000000000000    0x2cf09
  .debug_info    0x0000000000000000     0x20b9 build/main.o
  .debug_info    0x00000000000020b9      0xe25 build/gpio.o
  .debug_info    0x0000000000002ede     0x1656 build/adc.o
  .debug_info    0x0000000000004534     0x1216 build/can.o
- .debug_info    0x000000000000574a     0x2143 build/oi_uavcan.o
- .debug_info    0x000000000000788d      0xbfa build/oi_driver.o
- .debug_info    0x0000000000008487     0x1045 build/freertos.o
- .debug_info    0x00000000000094cc     0x13a4 build/usart.o
- .debug_info    0x000000000000a870     0x105e build/stm32f3xx_it.o
- .debug_info    0x000000000000b8ce      0xda7 build/stm32f3xx_hal_msp.o
- .debug_info    0x000000000000c675     0x146e build/stm32f3xx_hal_timebase_tim.o
- .debug_info    0x000000000000dae3     0x25d4 build/stm32f3xx_hal_adc_ex.o
- .debug_info    0x00000000000100b7     0x1b7b build/stm32f3xx_hal_can.o
- .debug_info    0x0000000000011c32     0x3bdb build/stm32f3xx_hal_tim.o
- .debug_info    0x000000000001580d     0x216e build/stm32f3xx_hal_tim_ex.o
- .debug_info    0x000000000001797b     0x24e7 build/stm32f3xx_hal_uart.o
- .debug_info    0x0000000000019e62     0x1239 build/stm32f3xx_hal.o
- .debug_info    0x000000000001b09b     0x1e24 build/stm32f3xx_hal_rcc.o
- .debug_info    0x000000000001cebf     0x1119 build/stm32f3xx_hal_rcc_ex.o
- .debug_info    0x000000000001dfd8     0x10b0 build/stm32f3xx_hal_gpio.o
- .debug_info    0x000000000001f088     0x18d8 build/stm32f3xx_hal_cortex.o
- .debug_info    0x0000000000020960      0xdbd build/system_stm32f3xx.o
- .debug_info    0x000000000002171d      0xbdc build/list.o
- .debug_info    0x00000000000222f9     0x2c28 build/tasks.o
- .debug_info    0x0000000000024f21     0x2587 build/cmsis_os.o
- .debug_info    0x00000000000274a8      0xd7b build/heap_4.o
- .debug_info    0x0000000000028223      0x56c build/port.o
- .debug_info    0x000000000002878f     0x32d5 build/canard.o
- .debug_info    0x000000000002ba64     0x1482 build/canard_stm32.o
- .debug_info    0x000000000002cee6       0x22 build/startup_stm32f303xc.o
+ .debug_info    0x000000000000574a     0x2144 build/oi_uavcan.o
+ .debug_info    0x000000000000788e      0xbfa build/oi_driver.o
+ .debug_info    0x0000000000008488     0x1045 build/freertos.o
+ .debug_info    0x00000000000094cd     0x13a4 build/usart.o
+ .debug_info    0x000000000000a871     0x105e build/stm32f3xx_it.o
+ .debug_info    0x000000000000b8cf      0xda7 build/stm32f3xx_hal_msp.o
+ .debug_info    0x000000000000c676     0x146e build/stm32f3xx_hal_timebase_tim.o
+ .debug_info    0x000000000000dae4     0x25d4 build/stm32f3xx_hal_adc_ex.o
+ .debug_info    0x00000000000100b8     0x1b7b build/stm32f3xx_hal_can.o
+ .debug_info    0x0000000000011c33     0x3bdb build/stm32f3xx_hal_tim.o
+ .debug_info    0x000000000001580e     0x216e build/stm32f3xx_hal_tim_ex.o
+ .debug_info    0x000000000001797c     0x24e7 build/stm32f3xx_hal_uart.o
+ .debug_info    0x0000000000019e63     0x1239 build/stm32f3xx_hal.o
+ .debug_info    0x000000000001b09c     0x1e24 build/stm32f3xx_hal_rcc.o
+ .debug_info    0x000000000001cec0     0x1119 build/stm32f3xx_hal_rcc_ex.o
+ .debug_info    0x000000000001dfd9     0x10b0 build/stm32f3xx_hal_gpio.o
+ .debug_info    0x000000000001f089     0x18d8 build/stm32f3xx_hal_cortex.o
+ .debug_info    0x0000000000020961      0xdbd build/system_stm32f3xx.o
+ .debug_info    0x000000000002171e      0xbdc build/list.o
+ .debug_info    0x00000000000222fa     0x2c28 build/tasks.o
+ .debug_info    0x0000000000024f22     0x2587 build/cmsis_os.o
+ .debug_info    0x00000000000274a9      0xd7b build/heap_4.o
+ .debug_info    0x0000000000028224      0x56c build/port.o
+ .debug_info    0x0000000000028790     0x32d5 build/canard.o
+ .debug_info    0x000000000002ba65     0x1482 build/canard_stm32.o
+ .debug_info    0x000000000002cee7       0x22 build/startup_stm32f303xc.o
 
-.debug_abbrev   0x0000000000000000     0x53c3
+.debug_abbrev   0x0000000000000000     0x53c5
  .debug_abbrev  0x0000000000000000      0x2bf build/main.o
  .debug_abbrev  0x00000000000002bf      0x20d build/gpio.o
  .debug_abbrev  0x00000000000004cc      0x246 build/adc.o
  .debug_abbrev  0x0000000000000712      0x253 build/can.o
- .debug_abbrev  0x0000000000000965      0x46e build/oi_uavcan.o
- .debug_abbrev  0x0000000000000dd3      0x211 build/oi_driver.o
- .debug_abbrev  0x0000000000000fe4      0x274 build/freertos.o
- .debug_abbrev  0x0000000000001258      0x246 build/usart.o
- .debug_abbrev  0x000000000000149e      0x203 build/stm32f3xx_it.o
- .debug_abbrev  0x00000000000016a1      0x209 build/stm32f3xx_hal_msp.o
- .debug_abbrev  0x00000000000018aa      0x27b build/stm32f3xx_hal_timebase_tim.o
- .debug_abbrev  0x0000000000001b25      0x33c build/stm32f3xx_hal_adc_ex.o
- .debug_abbrev  0x0000000000001e61      0x346 build/stm32f3xx_hal_can.o
- .debug_abbrev  0x00000000000021a7      0x310 build/stm32f3xx_hal_tim.o
- .debug_abbrev  0x00000000000024b7      0x2f8 build/stm32f3xx_hal_tim_ex.o
- .debug_abbrev  0x00000000000027af      0x31c build/stm32f3xx_hal_uart.o
- .debug_abbrev  0x0000000000002acb      0x2c3 build/stm32f3xx_hal.o
- .debug_abbrev  0x0000000000002d8e      0x37d build/stm32f3xx_hal_rcc.o
- .debug_abbrev  0x000000000000310b      0x318 build/stm32f3xx_hal_rcc_ex.o
- .debug_abbrev  0x0000000000003423      0x2be build/stm32f3xx_hal_gpio.o
- .debug_abbrev  0x00000000000036e1      0x3c0 build/stm32f3xx_hal_cortex.o
- .debug_abbrev  0x0000000000003aa1      0x200 build/system_stm32f3xx.o
- .debug_abbrev  0x0000000000003ca1      0x217 build/list.o
- .debug_abbrev  0x0000000000003eb8      0x400 build/tasks.o
- .debug_abbrev  0x00000000000042b8      0x3d3 build/cmsis_os.o
- .debug_abbrev  0x000000000000468b      0x312 build/heap_4.o
- .debug_abbrev  0x000000000000499d      0x230 build/port.o
- .debug_abbrev  0x0000000000004bcd      0x44f build/canard.o
- .debug_abbrev  0x000000000000501c      0x395 build/canard_stm32.o
- .debug_abbrev  0x00000000000053b1       0x12 build/startup_stm32f303xc.o
+ .debug_abbrev  0x0000000000000965      0x470 build/oi_uavcan.o
+ .debug_abbrev  0x0000000000000dd5      0x211 build/oi_driver.o
+ .debug_abbrev  0x0000000000000fe6      0x274 build/freertos.o
+ .debug_abbrev  0x000000000000125a      0x246 build/usart.o
+ .debug_abbrev  0x00000000000014a0      0x203 build/stm32f3xx_it.o
+ .debug_abbrev  0x00000000000016a3      0x209 build/stm32f3xx_hal_msp.o
+ .debug_abbrev  0x00000000000018ac      0x27b build/stm32f3xx_hal_timebase_tim.o
+ .debug_abbrev  0x0000000000001b27      0x33c build/stm32f3xx_hal_adc_ex.o
+ .debug_abbrev  0x0000000000001e63      0x346 build/stm32f3xx_hal_can.o
+ .debug_abbrev  0x00000000000021a9      0x310 build/stm32f3xx_hal_tim.o
+ .debug_abbrev  0x00000000000024b9      0x2f8 build/stm32f3xx_hal_tim_ex.o
+ .debug_abbrev  0x00000000000027b1      0x31c build/stm32f3xx_hal_uart.o
+ .debug_abbrev  0x0000000000002acd      0x2c3 build/stm32f3xx_hal.o
+ .debug_abbrev  0x0000000000002d90      0x37d build/stm32f3xx_hal_rcc.o
+ .debug_abbrev  0x000000000000310d      0x318 build/stm32f3xx_hal_rcc_ex.o
+ .debug_abbrev  0x0000000000003425      0x2be build/stm32f3xx_hal_gpio.o
+ .debug_abbrev  0x00000000000036e3      0x3c0 build/stm32f3xx_hal_cortex.o
+ .debug_abbrev  0x0000000000003aa3      0x200 build/system_stm32f3xx.o
+ .debug_abbrev  0x0000000000003ca3      0x217 build/list.o
+ .debug_abbrev  0x0000000000003eba      0x400 build/tasks.o
+ .debug_abbrev  0x00000000000042ba      0x3d3 build/cmsis_os.o
+ .debug_abbrev  0x000000000000468d      0x312 build/heap_4.o
+ .debug_abbrev  0x000000000000499f      0x230 build/port.o
+ .debug_abbrev  0x0000000000004bcf      0x44f build/canard.o
+ .debug_abbrev  0x000000000000501e      0x395 build/canard_stm32.o
+ .debug_abbrev  0x00000000000053b3       0x12 build/startup_stm32f303xc.o
 
-.debug_loc      0x0000000000000000    0x14b77
+.debug_loc      0x0000000000000000    0x14b7d
  .debug_loc     0x0000000000000000      0x115 build/main.o
  .debug_loc     0x0000000000000115       0x39 build/gpio.o
  .debug_loc     0x000000000000014e      0x19d build/adc.o
  .debug_loc     0x00000000000002eb       0xf8 build/can.o
- .debug_loc     0x00000000000003e3      0xae4 build/oi_uavcan.o
- .debug_loc     0x0000000000000ec7       0xef build/oi_driver.o
- .debug_loc     0x0000000000000fb6       0xf7 build/freertos.o
- .debug_loc     0x00000000000010ad       0xf8 build/usart.o
- .debug_loc     0x00000000000011a5       0x20 build/stm32f3xx_it.o
- .debug_loc     0x00000000000011c5       0x38 build/stm32f3xx_hal_msp.o
- .debug_loc     0x00000000000011fd       0xbd build/stm32f3xx_hal_timebase_tim.o
- .debug_loc     0x00000000000012ba     0x2251 build/stm32f3xx_hal_adc_ex.o
- .debug_loc     0x000000000000350b      0xdd9 build/stm32f3xx_hal_can.o
- .debug_loc     0x00000000000042e4     0x4194 build/stm32f3xx_hal_tim.o
- .debug_loc     0x0000000000008478     0x1f0d build/stm32f3xx_hal_tim_ex.o
- .debug_loc     0x000000000000a385     0x1ca2 build/stm32f3xx_hal_uart.o
- .debug_loc     0x000000000000c027      0x19d build/stm32f3xx_hal.o
- .debug_loc     0x000000000000c1c4      0xa6e build/stm32f3xx_hal_rcc.o
- .debug_loc     0x000000000000cc32      0x8b5 build/stm32f3xx_hal_rcc_ex.o
- .debug_loc     0x000000000000d4e7      0x441 build/stm32f3xx_hal_gpio.o
- .debug_loc     0x000000000000d928      0x65e build/stm32f3xx_hal_cortex.o
- .debug_loc     0x000000000000df86       0xff build/system_stm32f3xx.o
- .debug_loc     0x000000000000e085       0x9c build/list.o
- .debug_loc     0x000000000000e121     0x17d5 build/tasks.o
- .debug_loc     0x000000000000f8f6     0x15ed build/cmsis_os.o
- .debug_loc     0x0000000000010ee3      0x324 build/heap_4.o
- .debug_loc     0x0000000000011207      0x128 build/port.o
- .debug_loc     0x000000000001132f     0x2efe build/canard.o
- .debug_loc     0x000000000001422d      0x94a build/canard_stm32.o
+ .debug_loc     0x00000000000003e3      0xaea build/oi_uavcan.o
+ .debug_loc     0x0000000000000ecd       0xef build/oi_driver.o
+ .debug_loc     0x0000000000000fbc       0xf7 build/freertos.o
+ .debug_loc     0x00000000000010b3       0xf8 build/usart.o
+ .debug_loc     0x00000000000011ab       0x20 build/stm32f3xx_it.o
+ .debug_loc     0x00000000000011cb       0x38 build/stm32f3xx_hal_msp.o
+ .debug_loc     0x0000000000001203       0xbd build/stm32f3xx_hal_timebase_tim.o
+ .debug_loc     0x00000000000012c0     0x2251 build/stm32f3xx_hal_adc_ex.o
+ .debug_loc     0x0000000000003511      0xdd9 build/stm32f3xx_hal_can.o
+ .debug_loc     0x00000000000042ea     0x4194 build/stm32f3xx_hal_tim.o
+ .debug_loc     0x000000000000847e     0x1f0d build/stm32f3xx_hal_tim_ex.o
+ .debug_loc     0x000000000000a38b     0x1ca2 build/stm32f3xx_hal_uart.o
+ .debug_loc     0x000000000000c02d      0x19d build/stm32f3xx_hal.o
+ .debug_loc     0x000000000000c1ca      0xa6e build/stm32f3xx_hal_rcc.o
+ .debug_loc     0x000000000000cc38      0x8b5 build/stm32f3xx_hal_rcc_ex.o
+ .debug_loc     0x000000000000d4ed      0x441 build/stm32f3xx_hal_gpio.o
+ .debug_loc     0x000000000000d92e      0x65e build/stm32f3xx_hal_cortex.o
+ .debug_loc     0x000000000000df8c       0xff build/system_stm32f3xx.o
+ .debug_loc     0x000000000000e08b       0x9c build/list.o
+ .debug_loc     0x000000000000e127     0x17d5 build/tasks.o
+ .debug_loc     0x000000000000f8fc     0x15ed build/cmsis_os.o
+ .debug_loc     0x0000000000010ee9      0x324 build/heap_4.o
+ .debug_loc     0x000000000001120d      0x128 build/port.o
+ .debug_loc     0x0000000000011335     0x2efe build/canard.o
+ .debug_loc     0x0000000000014233      0x94a build/canard_stm32.o
 
 .debug_aranges  0x0000000000000000     0x1540
  .debug_aranges
