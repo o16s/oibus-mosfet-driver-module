@@ -21,7 +21,17 @@ static uint32_t g_uptime = 0;
 
 static param_t parameters[] =
 {
-	    {"drivers", 0, 0b0000000000, 0b1111111111, 0b0000000000}
+	{"drivers", 0, 0b0000000000, 0b1111111111, 0b0000000000},
+    {"ch1", 0, 0, 1, 0},
+    {"ch2", 0, 0, 1, 0},
+    {"ch3", 0, 0, 1, 0},
+    {"ch4", 0, 0, 1, 0},
+    {"ch5", 0, 0, 1, 0},
+    {"ch6", 0, 0, 1, 0},
+    {"ch7", 0, 0, 1, 0},
+    {"ch8", 0, 0, 1, 0},
+    {"ch9", 0, 0, 1, 0},
+    {"ch10", 0, 0, 1, 0},
 };
 
 
@@ -277,7 +287,8 @@ param_t* oi_uavcan_getParamByName(uint8_t * name)
 {
    for (uint16_t i = 0; i < ARRAY_SIZE(parameters); i++)
    {
-       if (strncmp(name, parameters[i].name, strlen(parameters[i].name)) == 0)
+       if (strncmp(name, parameters[i].name, strlen(parameters[i].name)) == 0 &&
+       strncmp(name, parameters[i].name, strlen(name)) == 0) // must check both string lenghts
        {
              return &parameters[i];
        }
@@ -293,11 +304,7 @@ void oi_uavcan_init(void)
 
 
   CanardSTM32CANTimings timings;
-<<<<<<< HEAD
-  int result = canardSTM32ComputeCANTimings(HAL_RCC_GetPCLK1Freq(), 100000, &timings);
-=======
   int result = canardSTM32ComputeCANTimings(HAL_RCC_GetPCLK1Freq(), CANSPEED, &timings);
->>>>>>> 00ae52756276f382bfc5b0f3b734b033a92f71d8
   if (result)
   {
       //__ASM volatile("BKPT #01");

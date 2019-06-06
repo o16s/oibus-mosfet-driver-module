@@ -139,31 +139,76 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void const * argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-  param_t* p = NULL;
+  
+  int64_t last_drivers_val = 0; //stores the last value in this parameter and updates it in case changed
+
+  //get params 
+  param_t* p_all = oi_uavcan_getParamByName("drivers");
+
+  param_t* p_ch1 = oi_uavcan_getParamByName("ch1");
+  param_t* p_ch2 = oi_uavcan_getParamByName("ch2");
+  param_t* p_ch3 = oi_uavcan_getParamByName("ch3");
+  param_t* p_ch4 = oi_uavcan_getParamByName("ch4");
+  param_t* p_ch5 = oi_uavcan_getParamByName("ch5");
+  param_t* p_ch6 = oi_uavcan_getParamByName("ch6");
+  param_t* p_ch7 = oi_uavcan_getParamByName("ch7");
+  param_t* p_ch8 = oi_uavcan_getParamByName("ch8");
+  param_t* p_ch9 = oi_uavcan_getParamByName("ch9");
+  param_t* p_ch10 = oi_uavcan_getParamByName("ch10");
 
   /* Infinite loop */
   for(;;)
   {
-        //get params and update the valve microcontroller
-        p = oi_uavcan_getParamByName("drivers");
-        oi_driver_set(GPIOB, In1_Pin, 0, p->val);
-        oi_driver_set(GPIOB, In2_Pin, 1, p->val);
-        oi_driver_set(GPIOA, In3_Pin, 2, p->val);
-        oi_driver_set(GPIOA, In4_Pin, 3, p->val);
-        oi_driver_set(GPIOA, In5_Pin, 4, p->val);
-        oi_driver_set(GPIOA, In6_Pin, 5, p->val);
-        oi_driver_set(GPIOA, In7_Pin, 6, p->val);
-        oi_driver_set(GPIOC, In8_Pin, 7, p->val);
-        oi_driver_set(GPIOB, In9_Pin, 8, p->val);
-        oi_driver_set(GPIOA, In10_Pin, 9, p->val);
+    if(p_all->val == last_drivers_val)
+    {
+      // The drivers parameter was not changed, i.e. the individual channels may have updates which will overwrite "drivers".
+      last_drivers_val =  ((p_ch1->val) << 4) +
+                          ((p_ch2->val) << 3) +
+                          ((p_ch3->val) << 2) +
+                          ((p_ch4->val) << 1) +
+                          ((p_ch5->val)     ) +
+                          ((p_ch6->val) << 5) +
+                          ((p_ch7->val) << 6) +
+                          ((p_ch8->val) << 7) +
+                          ((p_ch9->val) << 8) +
+                          ((p_ch10->val) << 9);
+      p_all->val = last_drivers_val;
+    }
+    else
+    {
+      // the drivers parameter was updated, so we force update all the individual channels' parameters
+      (p_ch1->val) = ((p_all->val) >> 4) & 1;
+      (p_ch2->val) = ((p_all->val) >> 3) & 1;
+      (p_ch3->val) = ((p_all->val) >> 2) & 1;
+      (p_ch4->val) = ((p_all->val) >> 1) & 1;
+      (p_ch5->val) = ((p_all->val))      & 1;
+      (p_ch6->val) = ((p_all->val) >> 5) & 1;
+      (p_ch7->val) = ((p_all->val) >> 6) & 1;
+      (p_ch8->val) = ((p_all->val) >> 7) & 1;
+      (p_ch9->val) = ((p_all->val) >> 8) & 1;
+      (p_ch10->val) = ((p_all->val) >> 9) & 1;
 
-        uint16_t uxHighWaterMark;
-        uxHighWaterMark = uxTaskGetStackHighWaterMark( NULL );
-        oi_uavcan_publish_keyVal("def",uxHighWaterMark);
+      last_drivers_val = p_all->val;
+    }
+    
+    oi_driver_set(GPIOB, In1_Pin, 0, p_all->val);
+    oi_driver_set(GPIOB, In2_Pin, 1, p_all->val);
+    oi_driver_set(GPIOA, In3_Pin, 2, p_all->val);
+    oi_driver_set(GPIOA, In4_Pin, 3, p_all->val);
+    oi_driver_set(GPIOA, In5_Pin, 4, p_all->val);
+    oi_driver_set(GPIOA, In6_Pin, 5, p_all->val);
+    oi_driver_set(GPIOA, In7_Pin, 6, p_all->val);
+    oi_driver_set(GPIOC, In8_Pin, 7, p_all->val);
+    oi_driver_set(GPIOB, In9_Pin, 8, p_all->val);
+    oi_driver_set(GPIOA, In10_Pin, 9, p_all->val);
 
-        HAL_GPIO_TogglePin(GPIOA, LED_Pin);
+    uint16_t uxHighWaterMark;
+    uxHighWaterMark = uxTaskGetStackHighWaterMark( NULL );
+    oi_uavcan_publish_keyVal("def",uxHighWaterMark);
 
-        osDelay(1000);
+    HAL_GPIO_TogglePin(GPIOA, LED_Pin);
+
+    osDelay(1000);
   }
   /* USER CODE END StartDefaultTask */
 }
