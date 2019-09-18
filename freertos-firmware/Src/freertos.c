@@ -55,6 +55,7 @@
 #include "cmsis_os.h"
 #include "oi_uavcan.h"
 #include "oi_driver.h"
+#include <math.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -116,7 +117,7 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
+  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 256);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -162,6 +163,7 @@ void StartDefaultTask(void const * argument)
   int onTimestamp = 0;
   int offTimestamp = 0;
   int currentTimestamp = 0;
+  int offsetCounter = 0;
 
   /* Infinite loop */
   for(;;)
@@ -209,10 +211,13 @@ void StartDefaultTask(void const * argument)
     oi_driver_set(GPIOB, In9_Pin, 8, p_all->val);
     oi_driver_set(GPIOA, In10_Pin, 9, p_all->val);
 
+    if(p_ch1_toffset->val > 0){
+      offsetCounter++;
+    }
 
-    if(p_ch1_period > 0){
-      currentTimestamp = ceil(osKernelSysTick()/1000) + p_ch1_toffset->val;
-      
+    if(p_ch1_period->val > 0 && offsetCounter >= p_ch1_toffset->val){
+      currentTimestamp = ceil(osKernelSysTick()/1000);
+
       if(p_ch1->val == 1){
 
         if((currentTimestamp - onTimestamp) > p_ch1_period->val){
@@ -236,7 +241,7 @@ void StartDefaultTask(void const * argument)
 
     HAL_GPIO_TogglePin(GPIOA, LED_Pin);
 
-    osDelay(1000);
+    osDelay(50);
   }
   /* USER CODE END StartDefaultTask */
 }
