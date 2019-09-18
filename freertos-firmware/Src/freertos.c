@@ -146,6 +146,8 @@ void StartDefaultTask(void const * argument)
   param_t* p_all = oi_uavcan_getParamByName("drivers");
 
   param_t* p_ch1 = oi_uavcan_getParamByName("ch1");
+  param_t* p_ch1_period = oi_uavcan_getParamByName("ch1_period");
+  param_t* p_ch1_toffset = oi_uavcan_getParamByName("ch1_toffset");
   param_t* p_ch2 = oi_uavcan_getParamByName("ch2");
   param_t* p_ch3 = oi_uavcan_getParamByName("ch3");
   param_t* p_ch4 = oi_uavcan_getParamByName("ch4");
@@ -155,6 +157,11 @@ void StartDefaultTask(void const * argument)
   param_t* p_ch8 = oi_uavcan_getParamByName("ch8");
   param_t* p_ch9 = oi_uavcan_getParamByName("ch9");
   param_t* p_ch10 = oi_uavcan_getParamByName("ch10");
+
+  //timer
+  int onTimestamp = 0;
+  int offTimestamp = 0;
+  int currentTimestamp = 0;
 
   /* Infinite loop */
   for(;;)
@@ -202,9 +209,30 @@ void StartDefaultTask(void const * argument)
     oi_driver_set(GPIOB, In9_Pin, 8, p_all->val);
     oi_driver_set(GPIOA, In10_Pin, 9, p_all->val);
 
-    uint16_t uxHighWaterMark;
-    uxHighWaterMark = uxTaskGetStackHighWaterMark( NULL );
-    oi_uavcan_publish_keyVal("def",uxHighWaterMark);
+
+    if(p_ch1_period > 0){
+      currentTimestamp = ceil(osKernelSysTick()/1000) + p_ch1_toffset->val;
+      
+      if(p_ch1->val == 1){
+
+        if((currentTimestamp - onTimestamp) > p_ch1_period->val){
+          //turn off
+          offTimestamp = ceil(osKernelSysTick()/1000);
+          p_ch1->val = 0;
+        }
+
+      }else{
+
+        if((currentTimestamp - offTimestamp) > p_ch1_period->val){
+          //turn on
+          onTimestamp = ceil(osKernelSysTick()/1000);
+          p_ch1->val = 1;
+        }
+        
+      }
+
+      
+    }
 
     HAL_GPIO_TogglePin(GPIOA, LED_Pin);
 
